@@ -248,7 +248,7 @@ h6 { font-weight: 300 }
 /*Right side mockup*/
 
 #hand {
-    background: url("https://res.cloudinary.com/dzixj0ktk/image/upload/v1566172112/iPhone_Xs_Mockup_tqixsa.png") top no-repeat;
+    background: url("https://res.cloudinary.com/dzixj0ktk/image/upload/v1566264992/iphone-xs-cropped_i2yepg.png") top no-repeat;
     width: 275px;
     height: 1000px;
     background-size: 100%;
@@ -771,12 +771,12 @@ SECTIONS
 .section-image {
     position: fixed;
     left: 50%;
-    top: 50%;
+    top: 44%;
     overflow: hidden;
     z-index: 1;
     margin-top: -192px;
     width: 232px;
-    height: 420px;
+    height: 500px;
     margin-left: 270px;
     border-radius: 2px;
 }
@@ -784,7 +784,7 @@ SECTIONS
 .section-image img {
     width: 100%;
     display: block;
-    max-height: 420px;
+    max-height: 500px;
 }
 .screenshots-wrapper {
     -webkit-transition: 0.9s;
