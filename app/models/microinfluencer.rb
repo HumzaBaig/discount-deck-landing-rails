@@ -1,0 +1,2 @@
+class Microinfluencer < ApplicationRecord
+end

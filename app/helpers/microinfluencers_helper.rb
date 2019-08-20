@@ -1,0 +1,2 @@
+module MicroinfluencersHelper
+end
