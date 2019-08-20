@@ -46,8 +46,33 @@ function mainScript() {
 
 }
 
+function emailAddressInput(e) {
+  e.preventDefault();
+
+    var emailAddress = { emailaddress: document.getElementById('application-email').value };
+
+    $.ajax({
+      type: "POST",
+      url: '/microinfluencers',
+      data: {
+        microinfluencer: emailAddress
+      },
+      success: function (res) {
+        document.getElementById("application-form").reset();
+        $('#email-submit').html('<span class="icon flaticon-check2"></span> Thank You');
+      },
+      error: function (err) {
+        $('#email-submit').html('<span class="icon flaticon-error4"></span> ERROR');
+        console.log("error: " + err);
+      }
+    });
+}
+
 
 $(document).ready(mainScript);
+$(document).ready(function() {
+  $('#email-submit').click(emailAddressInput);
+});
 
 jQuery(window).load(function() {
   jQuery('#preloader').fadeOut();
