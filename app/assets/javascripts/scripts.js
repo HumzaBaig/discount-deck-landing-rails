@@ -46,13 +46,9 @@ function mainScript() {
 
 }
 
-// document.addEventListener("turbolinks:load", mainScript);
+
 $(document).ready(mainScript);
 
 jQuery(window).load(function() {
-  jQuery('#preloader').fadeOut();
-});
-
-jQuery(window).on('turbolinks:load' , function() {
   jQuery('#preloader').fadeOut();
 });
