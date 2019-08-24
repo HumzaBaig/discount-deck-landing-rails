@@ -831,7 +831,7 @@ SECTIONS
     margin-bottom: 20px;
     font-size: 15px;
     font-size: 22px;
-    font-family: 'walkway_semiboldregular';
+    font-family: Open Sans;
     box-sizing: border-box;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -850,7 +850,8 @@ SECTIONS
 }
 .sidr-open .specifications { margin: 15px 10px }
 .specifications li { padding: 3px }
-.specifications .icon {
+.specifications .icon,
+.subscribers .icon {
     padding-right: 10px;
     color: #E02217;
 }
@@ -872,6 +873,16 @@ SECTIONS
 
 .subscribers, .price {
   margin: 15px 20px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fine-print {
+  font-size: 12px;
+  text-align: center;
 }
 
 /*Contact*/
