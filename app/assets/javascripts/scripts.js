@@ -14,7 +14,7 @@ function mainScript() {
       'slidesNavPosition': 'bottom',
       'easingcss3': 'ease',
       'navigation': true,
-      'anchors': ['Home', 'Micro-influencers', 'Influencer-Process', 'Sign-up', 'Contact'],
+      'anchors': ['Home', 'Micro-Influencers', 'Influencer-Process', 'Sign-up', 'Contact'],
       'navigationPosition': 'left'
   });
   $('.screenshots-content, .clients-content').css('height', $(window).height());
