@@ -162,7 +162,12 @@ h6 { font-weight: 300 }
     color: #fff;
     font-size: 15px;
     width: 51%;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+}
+@media screen and (max-width: 600px) {
+  .box {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  }
 }
 .box p { margin: 15px 0 }
 .overlay {
@@ -816,6 +821,7 @@ SECTIONS
     text-align: center;
     width: 31%;
     margin-right: 2%;
+    margin-bottom: 1%;
     float: left;
     overflow: hidden;
 }
@@ -864,15 +870,16 @@ SECTIONS
 .price-table:hover .package { background: #E02217 }
 
 .thin {
-  width: 35%;
+  width: 40%;
 }
 
 .wide {
-  width: 60%;
+  width: 55%;
 }
 
 .subscribers, .price {
   margin: 15px 20px;
+  line-height: 20px;
 }
 
 .price {
@@ -882,14 +889,22 @@ SECTIONS
 
 .fine-print {
   font-size: 12px;
-  text-align: center;
+  // text-align: center;
+  line-height: 1.2;
+  padding-right: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+  .fine-print {
+    font-size: 10px;
+  }
 }
 
 /*Contact*/
 
 #contact-form, #application-form {
     float: left;
-    margin-top: 30px;
+    margin-top: 10px;
     width: 100%;
 }
 #contact-form input::-webkit-input-placeholder, #application-form input::-webkit-input-placeholder { color: #fff }
