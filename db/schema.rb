@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_20_132126) do
+ActiveRecord::Schema.define(version: 2019_08_26_183258) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "briandas", force: :cascade do |t|
+    t.string "emailaddress", null: false
+    t.string "age"
+    t.string "gender"
+    t.string "city"
+    t.string "state"
+    t.string "country"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["emailaddress"], name: "index_briandas_on_emailaddress"
+  end
 
   create_table "microinfluencers", force: :cascade do |t|
     t.string "emailaddress", null: false

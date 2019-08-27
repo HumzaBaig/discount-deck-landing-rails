@@ -44,18 +44,18 @@ body {
     padding: 0;
     overflow: hidden;
 }
-a {
+.discountdeck a {
     color: #fff;
     text-decoration: none;
 }
-strong { font-weight: 700; }
-body {
+.discountdeck strong { font-weight: 700; }
+.discountdeck {
     background: url("https://res.cloudinary.com/dzixj0ktk/image/upload/v1565993883/leio-mclaren-leiomclaren-EvHdiHCZfEA-unsplash_skybq8.jpg");
     background-size: cover;
     color: #333;
     font-family: Open Sans;
 }
-ul {
+.discountdeck ul {
     list-style-type: none;
     padding: 0;
 }
@@ -86,9 +86,9 @@ ul {
 
 /* HEADINGS */
 
-h1,
-h2,
-h3 {
+.discountdeck h1,
+.discountdeck h2,
+.discountdeck h3 {
     color: #ffffff;
     margin-bottom: 30px;
     font-size: 50px;
@@ -97,9 +97,9 @@ h3 {
     line-height: 1.2;
     margin-top: 20px;
 }
-h4,
-h5,
-h6 { font-weight: 300 }
+.discountdeck h4,
+.discountdeck h5,
+.discountdeck h6 { font-weight: 300 }
 
 
 /*---------------------------------------
@@ -109,19 +109,19 @@ h6 { font-weight: 300 }
 
 /*SECTIONS*/
 
-.fp-section {
+.discountdeck .fp-section {
     position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.fp-slide { float: left }
-.fp-slide,
-.fp-slidesContainer {
+.discountdeck .fp-slide { float: left }
+.discountdeck .fp-slide,
+.discountdeck .fp-slidesContainer {
     height: 100%;
     display: block;
 }
-.fp-slides {
+.discountdeck .fp-slides {
     z-index: 1;
     height: 100%;
     overflow: hidden;
@@ -129,31 +129,31 @@ h6 { font-weight: 300 }
     -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
     transition: all 0.3s ease-out;
 }
-.fp-section.fp-table,
-.fp-slide.fp-table {
+.discountdeck .fp-section.fp-table,
+.discountdeck .fp-slide.fp-table {
     display: table;
     width: 100%;
 }
-.fp-tableCell {
+.discountdeck .fp-tableCell {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     height: 100%;
 }
-.wrap {
+.discountdeck .wrap {
     width: 1040px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     box-sizing: border-box;
 }
-.wrap .box,
-.wrap {
+.discountdeck .wrap .box,
+.discountdeck .wrap {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
 }
-.box {
+.discountdeck .box {
     font-family: Open Sans;
     text-align: left;
     line-height: 26px;
@@ -165,12 +165,12 @@ h6 { font-weight: 300 }
     text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
 }
 @media screen and (max-width: 600px) {
-  .box {
+  .discountdeck .box {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
   }
 }
-.box p { margin: 15px 0 }
-.overlay {
+.discountdeck .box p { margin: 15px 0 }
+.discountdeck .overlay {
     background: #000;
     opacity: 0.6;
     position: fixed;
@@ -180,14 +180,14 @@ h6 { font-weight: 300 }
 
 /*preloader*/
 
-#preloader {
+.discountdeck #preloader {
     position: fixed;
     z-index: 1000;
     width: 100%;
     height: 100%;
     background: #000;
 }
-#preloader img {
+.discountdeck #preloader img {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -196,7 +196,7 @@ h6 { font-weight: 300 }
 
 /*Logo   */
 
-#logo {
+.discountdeck #logo {
     position: fixed;
     top: 2%;
     display: none;
@@ -204,21 +204,21 @@ h6 { font-weight: 300 }
 
 /*Social Icons*/
 
-#social-icons {
+.discountdeck #social-icons {
     position: fixed;
     bottom: 2%;
 }
-#social-icons ul {
+.discountdeck #social-icons ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
-#social-icons li {
+.discountdeck #social-icons li {
     list-style-type: none;
     display: inline-block;
     margin-right: 5px;
 }
-#social-icons a {
+.discountdeck #social-icons a {
     font-size: 28px;
     color: #fff;
     text-decoration: none;
@@ -226,7 +226,7 @@ h6 { font-weight: 300 }
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-#social-icons a i {
+.discountdeck #social-icons a i {
     font-style: normal;
     font-weight: normal;
     opacity: 1;
@@ -245,14 +245,14 @@ h6 { font-weight: 300 }
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-#social-icons a:hover i {
+.discountdeck #social-icons a:hover i {
     border: 1px solid #E02217;
     color: #E02217;
 }
 
 /*Right side mockup*/
 
-#hand {
+.discountdeck #hand {
     background: url("https://res.cloudinary.com/dzixj0ktk/image/upload/v1566264992/iphone-xs-cropped_i2yepg.png") top no-repeat;
     width: 275px;
     height: 1000px;
@@ -274,7 +274,7 @@ h6 { font-weight: 300 }
 /*side main menu*/
 
 
-#main-nav {
+.discountdeck #main-nav {
     position: fixed;
     z-index: 100;
     top: 2%;
@@ -282,17 +282,17 @@ h6 { font-weight: 300 }
     font-size: 32px;
     font-weight: 300;
 }
-#main-nav span {
+.discountdeck #main-nav span {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-#main-nav:hover span { color: #E02217 }
-#menu-logo img {
+.discountdeck #main-nav:hover span { color: #E02217 }
+.discountdeck #menu-logo img {
     display: block;
     margin: 30px auto 35px auto;
 }
-.sidr {
+.discountdeck .sidr {
     display: none;
     position: absolute;
     position: fixed;
@@ -306,20 +306,20 @@ h6 { font-weight: 300 }
     font-size: 15px;
     background: #ffd2a9;
 }
-.sidr.right {
+.discountdeck .sidr.right {
     left: auto;
     right: -260px;
 }
-.sidr.left {
+.discountdeck .sidr.left {
     left: -260px;
     right: auto;
 }
-.sidr ul {
+.discountdeck .sidr ul {
     display: block;
     margin: 0 0 15px;
     padding: 0;
 }
-.sidr ul li {
+.discountdeck .sidr ul li {
     display: block;
     margin: 0;
     line-height: 45px;
@@ -328,20 +328,20 @@ h6 { font-weight: 300 }
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.sidr ul li:hover,
-.sidr ul li.active,
-.sidr ul li.sidr-class-active {
+.discountdeck .sidr ul li:hover,
+.discountdeck .sidr ul li.active,
+.discountdeck .sidr ul li.sidr-class-active {
     border-top: none;
     background: #E02217;
 }
-.sidr ul li:hover>a,
-.sidr ul li:hover>span,
-.sidr ul li.active>a,
-.sidr ul li.active>span,
-.sidr ul li.sidr-class-active>a,
-.sidr ul li.sidr-class-active>span { background: #E02217 }
-.sidr ul li a,
-.sidr ul li span {
+.discountdeck .sidr ul li:hover>a,
+.discountdeck .sidr ul li:hover>span,
+.discountdeck .sidr ul li.active>a,
+.discountdeck .sidr ul li.active>span,
+.discountdeck .sidr ul li.sidr-class-active>a,
+.discountdeck .sidr ul li.sidr-class-active>span { background: #E02217 }
+.discountdeck .sidr ul li a,
+.discountdeck .sidr ul li span {
     padding: 0 25px;
     display: block;
     text-decoration: none;
@@ -354,32 +354,32 @@ h6 { font-weight: 300 }
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.sidr ul li a span {
+.discountdeck .sidr ul li a span {
     display: inline-block;
     padding-left: 0;
     font-weight: 300;
     font-size: 14px;
 }
-.sidr-open .wrap { width: 1200px }
-.sidr-open .fp-slidesNav { margin-left: -602px!important }
-.sidr-open .wrap .box { width: 40% }
-.sidr-open #main-nav { left: 274px }
+.discountdeck .sidr-open .wrap { width: 1200px }
+.discountdeck .sidr-open .fp-slidesNav { margin-left: -602px!important }
+.discountdeck .sidr-open .wrap .box { width: 40% }
+.discountdeck .sidr-open #main-nav { left: 274px }
 
 /*navigation bullets*/
 
-#fp-nav {
+.discountdeck #fp-nav {
     position: fixed;
     z-index: 100;
     margin-top: -32px;
     top: 52%;
     opacity: 1;
 }
-#fp-nav.left { left: 17px }
-#fp-nav span,
-.fp-slidesNav span { border-color: #aaa }
-#fp-nav li .active span,
-.fp-slidesNav .active span { background: #fff }
-.fp-slidesNav {
+.discountdeck #fp-nav.left { left: 17px }
+.discountdeck #fp-nav span,
+.discountdeck .fp-slidesNav span { border-color: #aaa }
+.discountdeck #fp-nav li .active span,
+.discountdeck .fp-slidesNav .active span { background: #fff }
+.discountdeck .fp-slidesNav {
     position: absolute;
     z-index: 4;
     margin-left: -523px!important;
@@ -389,26 +389,26 @@ h6 { font-weight: 300 }
     top: 50%;
     margin-top: 140px;
 }
-.fp-slidesNav.top { top: 17px }
-#fp-nav ul,
-.fp-slidesNav ul {
+.discountdeck .fp-slidesNav.top { top: 17px }
+.discountdeck #fp-nav ul,
+.discountdeck .fp-slidesNav ul {
     margin: 0;
     padding: 0;
 }
-#fp-nav li,
-.fp-slidesNav li {
+.discountdeck #fp-nav li,
+.discountdeck .fp-slidesNav li {
     display: block;
     width: 12px;
     height: 12px;
     margin: 7px;
     position: relative;
 }
-.fp-slidesNav li {
+.discountdeck .fp-slidesNav li {
     display: inline-block;
     margin: 3px;
 }
-.fp-slidesNav li a,
-#fp-nav li a {
+.discountdeck .fp-slidesNav li a,
+.discountdeck #fp-nav li a {
     top: 0;
     left: 0;
     width: 100%;
@@ -421,19 +421,19 @@ h6 { font-weight: 300 }
     cursor: pointer;
     position: absolute;
 }
-.fp-slidesNav li a,
-#fp-nav li a {
+.discountdeck .fp-slidesNav li a,
+.discountdeck #fp-nav li a {
     background-color: transparent;
     box-shadow: inset 0 0 0 1px rgb(172, 172, 172);
     -webkit-transition: box-shadow 0.3s ease;
     transition: box-shadow 0.3s ease;
 }
-.fp-slidesNav li a:hover,
-.fp-slidesNav li a:focus,
-#fp-nav li a:hover,
-#fp-nav li a:focus { box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6) }
-.fp-slidesNav li a.active,
-#fp-nav li a.active { box-shadow: inset 0 0 0 8px white }
+.discountdeck .fp-slidesNav li a:hover,
+.discountdeck .fp-slidesNav li a:focus,
+.discountdeck #fp-nav li a:hover,
+.discountdeck #fp-nav li a:focus { box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6) }
+.discountdeck .fp-slidesNav li a.active,
+.discountdeck #fp-nav li a.active { box-shadow: inset 0 0 0 8px white }
 
 
 /*---------------------------------------
@@ -443,12 +443,12 @@ h6 { font-weight: 300 }
 
 /*tabs*/
 
-.tabs-style-linemove nav {
+.discountdeck .tabs-style-linemove nav {
     background: rgba(0, 0, 0, 0.3);
     overflow: hidden;
     border-radius: 4px;
 }
-.tabs-style-linemove nav li:last-child::before {
+.discountdeck .tabs-style-linemove nav li:last-child::before {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -459,38 +459,38 @@ h6 { font-weight: 300 }
     -webkit-transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
 }
-.tabs-style-linemove nav li:first-child.tab-current ~ li:last-child::before {
+.discountdeck .tabs-style-linemove nav li:first-child.tab-current ~ li:last-child::before {
     -webkit-transform: translate3d(-400%,0,0);
     transform: translate3d(-400%,0,0);
 }
-.tabs-style-linemove nav li:nth-child(1).tab-current ~ li:last-child::before {
+.discountdeck .tabs-style-linemove nav li:nth-child(1).tab-current ~ li:last-child::before {
     -webkit-transform: translate3d(-300%,0,0);
     transform: translate3d(-300%,0,0);
 }
-.tabs-style-linemove nav li:nth-child(2).tab-current ~ li:last-child::before {
+.discountdeck .tabs-style-linemove nav li:nth-child(2).tab-current ~ li:last-child::before {
     -webkit-transform: translate3d(-200%,0,0);
     transform: translate3d(-200%,0,0);
 }
-.tabs-style-linemove nav li:nth-child(3).tab-current ~ li:last-child::before {
+.discountdeck .tabs-style-linemove nav li:nth-child(3).tab-current ~ li:last-child::before {
     -webkit-transform: translate3d(-100%,0,0);
     transform: translate3d(-100%,0,0);
 }
-.tabs-style-linemove nav a {
+.discountdeck .tabs-style-linemove nav a {
     padding: 20px 0;
     color: #fff;
     line-height: 1;
     -webkit-transition: color 0.3s, -webkit-transform 0.3s;
     transition: color 0.3s, transform 0.3s;
 }
-.tabs {
+.discountdeck .tabs {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
     width: 100%;
     min-height: 270px;
 }
-.tabs nav { text-align: center }
-.tabs nav ul {
+.discountdeck .tabs nav { text-align: center }
+.discountdeck .tabs nav ul {
     position: relative;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -512,7 +512,7 @@ h6 { font-weight: 300 }
     -ms-justify-content: center;
     justify-content: center;
 }
-.tabs nav ul li {
+.discountdeck .tabs nav ul li {
     position: relative;
     z-index: 1;
     display: block;
@@ -523,7 +523,7 @@ h6 { font-weight: 300 }
     -ms-flex: 1;
     flex: 1;
 }
-.tabs nav a {
+.discountdeck .tabs nav a {
     position: relative;
     display: block;
     overflow: hidden;
@@ -531,23 +531,23 @@ h6 { font-weight: 300 }
     white-space: nowrap;
     line-height: 1;
 }
-.tabs nav a span { vertical-align: middle }
-.tabs nav a:focus { outline: none }
-.content-wrap { position: relative }
-.content-wrap section {
+.discountdeck .tabs nav a span { vertical-align: middle }
+.discountdeck .tabs nav a:focus { outline: none }
+.discountdeck .content-wrap { position: relative }
+.discountdeck .content-wrap section {
     display: none;
     margin: 0 auto;
     padding: 15px 0 0 0;
 }
-.content-wrap section.content-current { display: block }
+.discountdeck .content-wrap section.content-current { display: block }
 
 /*carousel*/
 
-.fp-slidesContainer {
+.discountdeck .fp-slidesContainer {
     float: left;
     position: relative;
 }
-.fp-controlArrow {
+.discountdeck .fp-controlArrow {
     position: absolute;
     z-index: 4;
     top: 50%;
@@ -557,7 +557,7 @@ h6 { font-weight: 300 }
     border-style: solid;
     margin-top: -38px;
 }
-.fp-controlArrow.fp-prev {
+.discountdeck .fp-controlArrow.fp-prev {
     left: -70px;
     width: 40px;
     height: 74px;
@@ -570,7 +570,7 @@ h6 { font-weight: 300 }
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.fp-controlArrow.fp-next {
+.discountdeck .fp-controlArrow.fp-next {
     right: -70px;
     width: 40px;
     height: 74px;
@@ -584,8 +584,8 @@ h6 { font-weight: 300 }
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.fp-controlArrow.fp-prev:hover,
-.fp-controlArrow.fp-next:hover { opacity: 1 }
+.discountdeck .fp-controlArrow.fp-prev:hover,
+.discountdeck .fp-controlArrow.fp-next:hover { opacity: 1 }
 
 /*buttons*/
 
@@ -605,7 +605,7 @@ h6 { font-weight: 300 }
 //     float: left;
 // }
 // .playstore-button:hover .playstore { background: url(../images/playstore2.png) }
-.simple-button {
+.discountdeck .simple-button {
     font-size: 16px;
     font-weight: 700;
     border-radius: 4px;
@@ -621,15 +621,15 @@ h6 { font-weight: 300 }
     transition: 0.3s;
     background: #E02217;
 }
-.simple-button:hover {
+.discountdeck .simple-button:hover {
     color: #333;
     background: #fff;
 }
 
 /*tooltip*/
 
-.tooltip { position: relative }
-.tooltip::after {
+.discountdeck .tooltip { position: relative }
+.discountdeck .tooltip::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -640,8 +640,8 @@ h6 { font-weight: 300 }
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-.tooltip:hover::after { pointer-events: auto }
-.tooltip-content {
+.discountdeck .tooltip:hover::after { pointer-events: auto }
+.discountdeck .tooltip-content {
     position: absolute;
     z-index: 9999;
     width: 335px;
@@ -657,14 +657,14 @@ h6 { font-weight: 300 }
     -webkit-transition: opacity 0.3s 0.3s;
     transition: opacity 0.3s 0.3s;
 }
-.tooltip:hover .tooltip-content {
+.discountdeck .tooltip:hover .tooltip-content {
     opacity: 1;
     pointer-events: auto;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
-.tooltip-content span { display: block }
-.tooltip-text {
+.discountdeck .tooltip-content span { display: block }
+.discountdeck .tooltip-text {
     border-bottom: 10px solid #fffaf0;
     overflow: hidden;
     -webkit-transform: scale3d(0,1,1);
@@ -672,13 +672,13 @@ h6 { font-weight: 300 }
     -webkit-transition: -webkit-transform 0.3s 0.3s;
     transition: transform 0.3s 0.3s;
 }
-.tooltip:hover .tooltip-text {
+.discountdeck .tooltip:hover .tooltip-text {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
     -webkit-transform: scale3d(1,1,1);
     transform: scale3d(1,1,1);
 }
-.tooltip-inner {
+.discountdeck .tooltip-inner {
     background: rgba(0, 0, 0, 0.85);
     padding: 30px;
     min-height: 80px;
@@ -687,18 +687,18 @@ h6 { font-weight: 300 }
     webkit-transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
 }
-.tooltip:hover .tooltip-inner {
+.discountdeck .tooltip:hover .tooltip-inner {
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-.tooltip a {
+.discountdeck .tooltip a {
     color: #fff;
     font-weight: bold;
 }
-.tooltip a:hover { color: #E02217 }
-.tooltip-content::after {
+.discountdeck .tooltip a:hover { color: #E02217 }
+.discountdeck .tooltip-content::after {
     content: '';
     bottom: -20px;
     left: 50%;
@@ -712,7 +712,7 @@ h6 { font-weight: 300 }
     border-width: 10px;
     margin-left: -10px;
 }
-.tooltip-inner .icon {
+.discountdeck .tooltip-inner .icon {
     float: left;
     display: block;
     color: #ddd;
@@ -725,15 +725,15 @@ h6 { font-weight: 300 }
 
 /*icons*/
 
-.icon {
+.discountdeck .icon {
     font-weight: normal;
     line-height: 20px;
     margin-right: 5px;
 }
-.clients-content .icon,
-.tabs .icon,
-.features .icon { color: #E02217 }
-.simple-button .icon {
+.discountdeck .clients-content .icon,
+.discountdeck .tabs .icon,
+.discountdeck .features .icon { color: #E02217 }
+.discountdeck .simple-button .icon {
     margin-right: 20px;
     font-size: 18px;
 }
@@ -746,34 +746,34 @@ SECTIONS
 
 /*Features*/
 
-.features {
+.discountdeck .features {
     margin-top: 10px;
     float: left;
     margin-right: 50px;
     margin-bottom: 0;
 }
-.features li { margin-bottom: 10px }
+.discountdeck .features li { margin-bottom: 10px }
 
 /*Clients feedbacks*/
 
-.clients-content { position: relative }
-.clients-content .fp-controlArrow { display: none }
-.clients-content .fp-tableCell { height: 100%!important }
-.client-stars { float: right }
-.clients-content p { margin-top: 0 }
+.discountdeck .clients-content { position: relative }
+.discountdeck .clients-content .fp-controlArrow { display: none }
+.discountdeck .clients-content .fp-tableCell { height: 100%!important }
+.discountdeck .client-stars { float: right }
+.discountdeck .clients-content p { margin-top: 0 }
 
 /* Video Presentation*/
 
-.video-presentation {
+.discountdeck .video-presentation {
     width: 100%;
     margin-top: 30px;
 }
-.video-presentation iframe { border: none }
+.discountdeck .video-presentation iframe { border: none }
 
 /*Screenshots*/
 
-.screenshots-wrapper,
-.section-image {
+.discountdeck .screenshots-wrapper,
+.discountdeck .section-image {
     position: fixed;
     left: 50%;
     top: 44%;
@@ -785,28 +785,28 @@ SECTIONS
     margin-left: 270px;
     border-radius: 2px;
 }
-.screenshots-wrapper img,
-.section-image img {
+.discountdeck .screenshots-wrapper img,
+.discountdeck .section-image img {
     width: 100%;
     display: block;
     max-height: 500px;
 }
-.screenshots-wrapper {
+.discountdeck .screenshots-wrapper {
     -webkit-transition: 0.9s;
     -o-transition: 0.9s;
     transition: 0.9s;
     opacity: 0;
 }
-.active .screenshots-wrapper {
+.discountdeck .active .screenshots-wrapper {
     opacity: 1;
     overflow: visible;
 }
-.screenshots-wrapper .fp-tableCell { height: 100%!important }
-.active .section-image img { opacity: 1 }
+.discountdeck .screenshots-wrapper .fp-tableCell { height: 100%!important }
+.discountdeck .active .section-image img { opacity: 1 }
 
 /*Pricing*/
 
-.pricing-button {
+.discountdeck .pricing-button {
     padding: 20px 0;
     box-sizing: border-box;
     -webkit-transition: 0.3s;
@@ -815,7 +815,7 @@ SECTIONS
     background: rgba(0, 0, 0, 0.2);
     font-weight: 700;
 }
-.price-table {
+.discountdeck .price-table {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     text-align: center;
@@ -825,12 +825,12 @@ SECTIONS
     float: left;
     overflow: hidden;
 }
-.popular {
+.discountdeck .popular {
     color: #fff;
     padding: 30px 0;
 }
-.popular .icon { color: #fff }
-.package {
+.discountdeck .popular .icon { color: #fff }
+.discountdeck .package {
     padding: 20px 0;
     margin: 0;
     background: rgba(0, 0, 0, 0.2);
@@ -843,51 +843,51 @@ SECTIONS
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.popular .price { background-color: rgba(255,255,255, 0.2) !important }
-.dollar { font-size: 21px }
-.amount {
+.discountdeck .popular .price { background-color: rgba(255,255,255, 0.2) !important }
+.discountdeck .dollar { font-size: 21px }
+.discountdeck .amount {
     font-size: 28px;
     line-height: 32px;
 }
-.specifications {
+.discountdeck .specifications {
     list-style: none;
     text-align: left;
     margin: 15px 20px;
 }
-.sidr-open .specifications { margin: 15px 10px }
-.specifications li { padding: 3px }
-.specifications .icon,
-.subscribers .icon {
+.discountdeck .sidr-open .specifications { margin: 15px 10px }
+.discountdeck .specifications li { padding: 3px }
+.discountdeck .specifications .icon,
+.discountdeck .subscribers .icon {
     padding-right: 10px;
     color: #E02217;
 }
-.normal .btn-line { width: 150px }
-.popular .btn-line {
+.discountdeck .normal .btn-line { width: 150px }
+.discountdeck .popular .btn-line {
     color: #fff !important;
     border-color: #fff !important;
 }
-.price-table:hover .pricing-button,
-.price-table:hover .package { background: #E02217 }
+.discountdeck .price-table:hover .pricing-button,
+.discountdeck .price-table:hover .package { background: #E02217 }
 
-.thin {
+.discountdeck .thin {
   width: 40%;
 }
 
-.wide {
+.discountdeck .wide {
   width: 55%;
 }
 
-.subscribers, .price {
+.discountdeck .subscribers, .price {
   margin: 15px 20px;
   line-height: 20px;
 }
 
-.price {
+.discountdeck .price {
   display: flex;
   justify-content: space-around;
 }
 
-.fine-print {
+.discountdeck .fine-print {
   font-size: 12px;
   // text-align: center;
   line-height: 1.2;
@@ -895,38 +895,38 @@ SECTIONS
 }
 
 @media only screen and (max-width: 600px) {
-  .fine-print {
+  .discountdeck .fine-print {
     font-size: 10px;
   }
 }
 
 /*Contact*/
 
-#contact-form, #application-form {
+.discountdeck #contact-form, .discountdeck #application-form {
     float: left;
     margin-top: 10px;
     width: 100%;
 }
-#contact-form input::-webkit-input-placeholder, #application-form input::-webkit-input-placeholder { color: #fff }
-#contact-form input::-moz-placeholder, #application-form input::-moz-placeholder {
+.discountdeck #contact-form input::-webkit-input-placeholder, .discountdeck #application-form input::-webkit-input-placeholder { color: #fff }
+.discountdeck #contact-form input::-moz-placeholder, .discountdeck #application-form input::-moz-placeholder {
     color: #fff;
     opacity: 1;
 }
-#contact-form input:-moz-placeholder, #application-form input:-moz-placeholder {
+.discountdeck #contact-form input:-moz-placeholder, #application-form input:-moz-placeholder {
     color: #fff;
     opacity: 1;
 }
-#contact-form textarea::-webkit-input-placeholder { color: #fff }
-#contact-form textarea::-moz-placeholder {
+.discountdeck #contact-form textarea::-webkit-input-placeholder { color: #fff }
+.discountdeck #contact-form textarea::-moz-placeholder {
     color: #fff;
     opacity: 1;
 }
-#contact-form textarea:-moz-placeholder {
+.discountdeck #contact-form textarea:-moz-placeholder {
     color: #fff;
     opacity: 1;
 }
-#contact-form textarea,
-#contact-form input {
+.discountdeck #contact-form textarea,
+.discountdeck #contact-form input {
     outline: none;
     background: none;
     float: left;
@@ -947,7 +947,7 @@ SECTIONS
     transition: 0.3s;
 }
 
-#application-form input {
+.discountdeck #application-form input {
   outline: none;
   background: none;
   color: #fff;
@@ -967,17 +967,17 @@ SECTIONS
   transition: 0.3s;
 }
 
-#contact-form textarea:focus,
-#contact-form input:focus,
-#application-form input:focus { background: #E02217 }
-#contact-form textarea {
+.discountdeck #contact-form textarea:focus,
+.discountdeck #contact-form input:focus,
+.discountdeck #application-form input:focus { background: #E02217 }
+.discountdeck #contact-form textarea {
     width: 97%;
     resize: none;
     height: 70px;
     margin-bottom: 0;
 }
 
-#submit, #email-submit {
+.discountdeck #submit, .discountdeck #email-submit {
 font-weight: 700;
 border-radius: 4px;
 color: #ffffff;
@@ -997,7 +997,7 @@ transition: 0.3s;
 background: #E02217;
 }
 
-#submit:hover, #email-submit:hover {
+.discountdeck #submit:hover, .discountdeck #email-submit:hover {
     background: #fff;
     color: #111;
 }
