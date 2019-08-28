@@ -166,7 +166,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 640px) {
+@media (max-width: 640px) {
 
 
     .discountdeck h1, .discountdeck h2, .discountdeck h3 {
@@ -174,7 +174,7 @@
         line-height: 1;
     }
 
-    .discountdeck .sidr-open .wrap .box, .box {
+    .discountdeck .sidr-open .wrap .box, .discountdeck .box {
         width: 100%;
         text-align: center;
         font-size: 11px;
