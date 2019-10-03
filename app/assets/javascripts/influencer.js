@@ -90,7 +90,15 @@ function submitInfo(e) {
     state = "";
     country = "";
 
-    sendBriandaRequest();
+    if(influencerName == 'brianda'){
+      sendBriandaRequest();
+    }
+    else if (influencerName == 'john-gillon') {
+      sendJohnGillonRequest();
+    }
+    else {
+      console.log("error: not an influencer");
+    }
   }
 }
 
