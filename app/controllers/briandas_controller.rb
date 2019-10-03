@@ -15,7 +15,6 @@ class BriandasController < ApplicationController
   private
 
   def brianda_params
-    print(params)
     params.require(:brianda).permit(:emailaddress, :age, :gender, :city, :state, :country)
   end
 end

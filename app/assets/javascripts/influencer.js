@@ -12,7 +12,7 @@ function checkInfo() {
   return flag;
 }
 
-function sendUserRequest() {
+function sendBriandaRequest() {
   $.ajax({
     type: "POST",
     url: '/briandas',
@@ -27,7 +27,31 @@ function sendUserRequest() {
       }
     },
     success: function (res) {
-      document.getElementById("brianda-form").reset();
+      document.getElementById("influencer-form").reset();
+      $('#successModal').modal('show');
+    },
+    error: function (err) {
+      $('#errorModal').modal('show');
+    }
+  });
+}
+
+function sendJohnGillonRequest() {
+  $.ajax({
+    type: "POST",
+    url: '/john_gillons',
+    data: {
+      "john_gillon": {
+        "emailaddress": emailAddress,
+        "age": ageRange,
+        "gender": gender,
+        "city": city,
+        "state": state,
+        "country": country
+      }
+    },
+    success: function (res) {
+      document.getElementById("influencer-form").reset();
       $('#successModal').modal('show');
     },
     error: function (err) {
@@ -40,14 +64,24 @@ function submitInfo(e) {
   e.preventDefault();
 
   if(document.getElementById('agreement-checkbox').checked) {
-    emailAddress = document.getElementById('brianda-email').value;
-    ageRange = document.getElementById('brianda-age').value;
-    gender = document.getElementById('brianda-gender').value;
-    city = document.getElementById('brianda-city').value;
-    state = document.getElementById('brianda-state').value;
-    country = document.getElementById('brianda-country').value;
+    emailAddress = document.getElementById('influencer-email').value;
+    ageRange = document.getElementById('influencer-age').value;
+    gender = document.getElementById('influencer-gender').value;
+    city = document.getElementById('influencer-city').value;
+    state = document.getElementById('influencer-state').value;
+    country = document.getElementById('influencer-country').value;
 
-    sendUserRequest();
+    influencerName = document.getElementById('influencer-form').dataset.name;
+
+    if(influencerName == 'brianda'){
+      sendBriandaRequest();
+    }
+    else if (influencerName == 'john-gillon') {
+      sendJohnGillonRequest();
+    }
+    else {
+      console.log("error: not an influencer");
+    }
   } else {
     emailAddress = "";
     ageRange = "";
@@ -56,12 +90,12 @@ function submitInfo(e) {
     state = "";
     country = "";
 
-    sendUserRequest();
+    sendBriandaRequest();
   }
 }
 
 $(document).ready(function(){
-  if (document.getElementById('brianda-button')) {
-    document.getElementById('brianda-button').addEventListener('click', submitInfo);
+  if (document.getElementById('influencer-button')) {
+    document.getElementById('influencer-button').addEventListener('click', submitInfo);
   }
 });
