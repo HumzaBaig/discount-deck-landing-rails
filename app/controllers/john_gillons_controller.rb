@@ -14,7 +14,7 @@ class JohnGillonsController < ApplicationController
 
   private
 
-  def join_gillon_params
+  def john_gillon_params
     params.require(:john_gillon).permit(:emailaddress, :age, :gender, :city, :state, :country)
   end
 end
