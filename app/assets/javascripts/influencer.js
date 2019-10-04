@@ -64,14 +64,14 @@ function submitInfo(e) {
   e.preventDefault();
 
   if(document.getElementById('agreement-checkbox').checked) {
+    influencerName = document.getElementById('influencer-form').dataset.name;
+
     emailAddress = document.getElementById('influencer-email').value;
     ageRange = document.getElementById('influencer-age').value;
     gender = document.getElementById('influencer-gender').value;
     city = document.getElementById('influencer-city').value;
     state = document.getElementById('influencer-state').value;
     country = document.getElementById('influencer-country').value;
-
-    influencerName = document.getElementById('influencer-form').dataset.name;
 
     if(influencerName == 'brianda'){
       sendBriandaRequest();
@@ -83,6 +83,8 @@ function submitInfo(e) {
       console.log("error: not an influencer");
     }
   } else {
+    influencerName = document.getElementById('influencer-form').dataset.name;
+
     emailAddress = "";
     ageRange = "";
     gender = "";
