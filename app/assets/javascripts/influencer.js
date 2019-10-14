@@ -60,6 +60,54 @@ function sendJohnGillonRequest() {
   });
 }
 
+function sendAkoyAgauRequest() {
+  $.ajax({
+    type: "POST",
+    url: '/akoy_agaus',
+    data: {
+      "akoy_agau": {
+        "emailaddress": emailAddress,
+        "age": ageRange,
+        "gender": gender,
+        "city": city,
+        "state": state,
+        "country": country
+      }
+    },
+    success: function (res) {
+      document.getElementById("influencer-form").reset();
+      $('#successModal').modal('show');
+    },
+    error: function (err) {
+      $('#errorModal').modal('show');
+    }
+  });
+}
+
+function sendJohnJordanRequest() {
+  $.ajax({
+    type: "POST",
+    url: '/john_jordans',
+    data: {
+      "john_jordan": {
+        "emailaddress": emailAddress,
+        "age": ageRange,
+        "gender": gender,
+        "city": city,
+        "state": state,
+        "country": country
+      }
+    },
+    success: function (res) {
+      document.getElementById("influencer-form").reset();
+      $('#successModal').modal('show');
+    },
+    error: function (err) {
+      $('#errorModal').modal('show');
+    }
+  });
+}
+
 function submitInfo(e) {
   e.preventDefault();
 
@@ -79,6 +127,12 @@ function submitInfo(e) {
     else if (influencerName == 'john-gillon') {
       sendJohnGillonRequest();
     }
+    else if (influencerName == 'akoy-agau') {
+      sendAkoyAgauRequest();
+    }
+    else if (influencerName == 'john-jordan') {
+      sendJohnJordanRequest();
+    }
     else {
       console.log("error: not an influencer");
     }
@@ -97,6 +151,12 @@ function submitInfo(e) {
     }
     else if (influencerName == 'john-gillon') {
       sendJohnGillonRequest();
+    }
+    else if (influencerName == 'akoy-agau') {
+      sendAkoyAgauRequest();
+    }
+    else if (influencerName == 'john-jordan') {
+      sendJohnJordanRequest();
     }
     else {
       console.log("error: not an influencer");

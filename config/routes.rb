@@ -9,8 +9,12 @@ Rails.application.routes.draw do
   # influencer landing pages
   get '/brianda', to: 'briandas#new'
   get '/john_gillon', to: 'john_gillons#new'
+  get '/akoy_agau', to: 'akoy_agaus#new'
+  get '/john_jordan', to: 'john_jordans#new'
 
   resources :microinfluencers, only: [:create]
   resources :briandas, only: [:create]
   resources :john_gillons, only: [:create]
+  resources :akoy_agaus, only: [:create]
+  resources :john_jordans, only: [:create]
 end

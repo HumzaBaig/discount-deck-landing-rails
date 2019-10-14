@@ -58,6 +58,21 @@
   background-position: top;
 }
 
+.akoy-agau .user-container {
+  background-color:#2d3436;
+  background-image: url("https://res.cloudinary.com/dzixj0ktk/image/upload/c_lpad,g_west,h_1784,w_2100/v1571070267/IMG_0003-removebg_p2wemv.png"), linear-gradient(315deg, #000000 0%, #b82e1f 90%);
+  background-size: cover;
+  background-position: top;
+}
+
+.john-jordan .user-container {
+  background-color:#2d3436;
+  background-image: url("https://res.cloudinary.com/dzixj0ktk/image/upload/c_lpad,g_east,h_1303,w_1200/v1571083005/john_jordan_moving_dt4p7x.png"), linear-gradient(315deg, #63a4ff 0%, #83eaf1 99%);
+  background-size: contain;
+  background-position: left;
+}
+
+
 .influencer .full-height {
   height: 100%;
 }
@@ -102,6 +117,16 @@
 
 .john-gillon .user-button {
   background-color: #D2383A;
+  color: white;
+}
+
+.akoy-agau .user-button {
+  background-color: #ED3835;
+  color: white;
+}
+
+.john-jordan .user-button {
+  background-color: #EB4F34;
   color: white;
 }
 
@@ -167,6 +192,14 @@
     border: 1px solid #3B95B4;
     color: #3B95B4;
 }
+.akoy-agau #social-icons a:hover i {
+    border: 1px solid #ED3835;
+    color: #ED3835;
+}
+.john-jordan #social-icons a:hover i {
+    border: 1px solid #EB4F34;
+    color: #EB4F34;
+}
 
 @media screen and (max-width: 1140px) {
   #social-icons {
@@ -224,6 +257,14 @@
   .influencer .user-container {
     background-position: 25% 25%;
     /* background-size: 775px 815px; */
+  }
+  .john-jordan .user-container {
+    background-position: 45% 25%;
+    /* background-size: 775px 815px; */
+  }
+
+  .john-jordan .user-container {
+    background-size: cover;
   }
 
   .influencer .user-header {
