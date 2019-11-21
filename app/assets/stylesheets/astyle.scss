@@ -1,41 +1,52 @@
-/* =======================================================================
-AppSperia - App Landing Page
-======================================================================= */
-
-/*
-1. GLOBAL STYLES
-2. TYPOGRAPHY
-     2.1 FONTS
-     2.2 HEADINGS
-3. LAYOUT
-     3.1 SECTIONS
-     3.2 PRELOADER
-     3.3 LOGO
-     3.4 SOCIAL ICONS
-     3.5 RIGHT MOCKUP
-4. MENU
-     4.1 SIDE MAIN MENU
-     4.2 NAV BULLETS
-5. ELEMENTS
-     5.1 TABS
-     5.2 CAROUSEL
-     5.3 BUTTONS
-     5.4 TOOLTIP
-     5.5 ICONS
-6. SECTIONS
-     6.1 FEATURES
-     6.2 CLIENTS
-     6.3 VIDEO
-     6.4 SCREENSHOTS
-     6.5 PRICING
-     6.6 CONTACT
-*/
-
-
 /* --------------------------------------
-GLOBAL STYLES
+GLOBAL STYLES (including resets)
 -----------------------------------------*/
 
+
+.r-button{
+  --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
+  --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
+  --uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
+  --uirButtonBorderStyle: var(--rButtonBorderWidth, solid);
+  --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
+  --uirButtonFontFamily: var(--rButtonFontFamily, inherit);
+  --uirButtonFontSize: var(--rButtonFontSize,  inherit);
+  --uirButtonColor: var(--rButtonColor);
+
+  background-color: var(--uirButtonBackgroundColor);
+  padding: var(--uirButtonPadding);
+
+  border-width: var(--uirButtonBorderWidth);
+  border-style: var(--uirButtonBorderStyle);
+  border-color: var(--uirButtonBorderColor);
+
+  cursor: pointer;
+
+  font-family: var(--uirButtonFontFamily);
+  font-size: var(--uirButtonFontSize);
+}
+
+.r-button::-moz-focus-inner,
+.r-button[type="button"]::-moz-focus-inner,
+.r-button[type="reset"]::-moz-focus-inner,
+.r-button[type="submit"]::-moz-focus-inner {
+
+  /* Remove the inner border and padding in Firefox. */
+
+  border-style: none;
+  padding: 0;
+}
+
+/* The component will reset browser's styles of link */
+
+.r-link{
+  --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
+  --uirLinkTextColor: var(--rLinkTextColor);
+  --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+  display: var(--uirLinkDisplay) !important;
+  color: var(--uirLinkTextColor) !important;
+  text-decoration: var(--uirLinkTextDecoration) !important;
+}
 
 .discountdeck,
 .discountdeck body {
@@ -50,7 +61,7 @@ GLOBAL STYLES
 }
 .discountdeck strong { font-weight: 700; }
 .discountdeck {
-    background: url("https://res.cloudinary.com/dzixj0ktk/image/upload/v1565993883/leio-mclaren-leiomclaren-EvHdiHCZfEA-unsplash_skybq8.jpg");
+    background: url("https://res.cloudinary.com/dzixj0ktk/image/upload/v1574326264/bg_ui2ssb.svg");
     background-size: cover;
     color: #333;
     font-family: Open Sans;
@@ -66,23 +77,6 @@ GLOBAL STYLES
    TYPOGRAPHY
 -----------------------------------------*/
 
-
-/* FONTS */
-
-@font-face {
-    font-family: 'walkway_semiboldregular';
-    src: font-url('Walkway_SemiBold-webfont.eot');
-    src: font-url('Walkway_SemiBold-webfont.eot?#iefix') format('embedded-opentype'), font-url('Walkway_SemiBold-webfont.woff') format('woff'), font-url('Walkway_SemiBold-webfont.ttf') format('truetype'), font-url('Walkway_SemiBold-webfont.svg#walkway_semiboldregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'walkway_ultraboldregular';
-    src: url('Walkway_UltraBold-webfont.eot');
-    src: url('Walkway_UltraBold-webfont.eot?#iefix') format('embedded-opentype'), font-url('Walkway_UltraBold-webfont.woff') format('woff'), font-url('Walkway_UltraBold-webfont.ttf') format('truetype'), font-url('Walkway_UltraBold-webfont.svg#walkway_ultraboldregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* HEADINGS */
 
@@ -101,12 +95,6 @@ GLOBAL STYLES
 .discountdeck h5,
 .discountdeck h6 { font-weight: 300 }
 
-.sub-header {
-  font-size: 25px;
-  line-height: 1.5;
-  margin-top: -15px!important;
-  margin-bottom: 20px!important;
-}
 
 
 /*---------------------------------------
@@ -114,99 +102,190 @@ GLOBAL STYLES
 -----------------------------------------*/
 
 
-/*SECTIONS*/
 
-.discountdeck .fp-section {
-    position: relative;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.discountdeck .fp-slide { float: left }
-.discountdeck .fp-slide,
-.discountdeck .fp-slidesContainer {
-    height: 100%;
-    display: block;
-}
-.discountdeck .fp-slides {
-    z-index: 1;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
-    transition: all 0.3s ease-out;
-}
-.discountdeck .fp-section.fp-table,
-.discountdeck .fp-slide.fp-table {
-    display: table;
-    width: 100%;
-}
-.discountdeck .fp-tableCell {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-}
-.discountdeck .wrap {
-    width: 1040px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    box-sizing: border-box;
-}
-.discountdeck .wrap .box,
-.discountdeck .wrap {
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-.discountdeck .box {
-    font-family: Open Sans;
-    text-align: left;
-    line-height: 26px;
-    font-weight: 300;
-    font-style: normal;
-    color: #fff;
-    font-size: 15px;
-    width: 51%;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
-}
-@media screen and (max-width: 600px) {
-  .discountdeck .box {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
-  }
-}
-.discountdeck .box p { margin: 15px 0 }
-.discountdeck .overlay {
-    background: #000;
-    opacity: 0.6;
-    position: fixed;
-    width: 100%;
-    height: 100%;
+/*Header*/
+
+.discountdeck header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12.5%;
 }
 
-/*preloader*/
-
-.discountdeck #preloader {
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    height: 100%;
-    background: #000;
-}
-.discountdeck #preloader img {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    margin-left: -90px;
-}
-
-/*Logo   */
+/*Logo*/
 
 .discountdeck #logo {
     position: fixed;
-    top: 2%;
-    display: none;
+    left: 2%;
+}
+
+.discountdeck #logo img {
+  max-width: 375px;
+}
+
+.discountdeck .header-nav {
+  position: fixed;
+  right: 2%;
+}
+
+.discountdeck .header-nav li {
+  font-family: "Montserrat";
+
+  transition: all 1s ease;
+}
+
+// header-nav-link-button
+
+/*
+=====
+CORE STYLES
+=====
+*/
+
+.ai-element{
+	--uiaiElementDisplay: var(--aiElementDisplay, inline-flex);
+	--uiaiElementPadding: var(--aiElementPadding, var(--aiElementPaddingTop, 0) var(--aiElementPaddingRight, 0) var(--aiElementPaddingBottom, 0) var(--aiElementPaddingLeft, 0));
+	--uiaiElementColor: var(--aiElementColor);
+
+	display: var(--uiaiElementDisplay);
+	position: relative;
+	overflow: hidden;
+}
+
+a.ai-element{
+	padding: var(--uiaiElementPadding);
+}
+
+button.ai-element{
+	--rButtonPadding: var(--uiaiElementPadding);
+}
+
+.ai-element__label{
+	color: var(--uiaiElementColor);
+}
+
+.ai-element_type1{
+	--uiaiElementLineWeight: var(--aiElementLineWeight, 2px);
+	--uiaiElementLineColor: var(--aiElementLineColor, #000);
+}
+
+.ai-element_type1::before,
+.ai-element_type1::after{
+	width: 100%;
+	height: var(--uiaiElementLineWeight);
+	left: 0;
+}
+
+.ai-element_type1::before{
+	top: 0;
+}
+
+.ai-element_type1::after{
+	bottom: 0;
+}
+
+.ai-element_type1 .ai-element__label::before,
+.ai-element_type1 .ai-element__label::after{
+	width: var(--uiaiElementLineWeight);
+	height: 100%;
+	top: 0;
+}
+
+.ai-element_type1 .ai-element__label::before{
+	left: 0;
+}
+
+.ai-element_type1 .ai-element__label::after{
+	right: 0;
+}
+
+.ai-element_type1::before,
+.ai-element_type1::after,
+.ai-element_type1 .ai-element__label::before,
+.ai-element_type1 .ai-element__label::after{
+	content: "";
+	background-color: var(--uiaiElementLineColor);
+	position: absolute;
+	opacity: 1;
+
+	will-change: transform, opacity;
+	transition-property: transform, opacity;
+}
+
+.ai-element_type1:hover::before,
+.ai-element_type1:hover::after,
+.ai-element_type1:hover .ai-element__label::before,
+.ai-element_type1:hover .ai-element__label::after{
+	opacity: 0;
+}
+
+/*
+=====
+BUTTON EFFECTS
+=====
+*/
+
+.ai-element4::before,
+.ai-element4::after,
+.ai-element4 .ai-element__label::before,
+.ai-element4 .ai-element__label::after{
+	transition-timing-function: ease-out;
+	transition-duration: .2s, .2s;
+	transform: translate3d(0, 0, 0);
+}
+
+.ai-element4:hover::before,
+.ai-element4:hover::after,
+.ai-element4:hover .ai-element__label::before,
+.ai-element4:hover .ai-element__label::after{
+	transition-delay: 0s, .05s;
+}
+
+.ai-element4:hover::before{
+	transform: translate3d(-100%, 0, 0);
+}
+
+.ai-element4:hover::after{
+	transform: translate3d(100%, 0, 0);
+}
+
+.ai-element4:hover .ai-element__label::before{
+	transform: translate3d(0, 100%, 0);
+}
+
+.ai-element4:hover .ai-element__label::after{
+	transform: translate3d(0, -100%, 0);
+}
+
+/*
+=====
+SETTINGS
+=====
+*/
+
+.ai-element{
+	--aiElementLineWeight: 2px;
+	--aiElementLineColor: white;
+	--aiElementColor: white;
+	--aiElementColorHover: #1b646f;
+}
+
+.ai-element_type1 {
+	--aiElementPadding: 10px 15px;
+}
+
+/*Main Section*/
+main {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  color: white;
 }
 
 /*Social Icons*/
@@ -214,6 +293,7 @@ GLOBAL STYLES
 .discountdeck #social-icons {
     position: fixed;
     bottom: 2%;
+    left: 2%;
 }
 .discountdeck #social-icons ul {
     padding: 0;
@@ -253,346 +333,9 @@ GLOBAL STYLES
     transition: 0.3s;
 }
 .discountdeck #social-icons a:hover i {
-    border: 1px solid #E02217;
-    color: #E02217;
+    border: 1px solid #1b646f;
+    color: #1b646f;
 }
-
-/*Right side mockup*/
-
-.discountdeck #hand {
-    background: url("https://res.cloudinary.com/dzixj0ktk/image/upload/v1566264992/iphone-xs-cropped_i2yepg.png") top no-repeat;
-    width: 275px;
-    height: 1000px;
-    background-size: 100%;
-    position: fixed;
-    margin-left: 249px;
-    top: 50%;
-    margin-top: -260px;
-    left: 50%;
-    z-index: 100;
-}
-
-
-/*---------------------------------------
-   MENUS
------------------------------------------*/
-
-
-/*side main menu*/
-
-
-.discountdeck #main-nav {
-    position: fixed;
-    z-index: 100;
-    top: 2%;
-    left: 14px;
-    font-size: 32px;
-    font-weight: 300;
-}
-.discountdeck #main-nav span {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-.discountdeck #main-nav:hover span { color: #E02217 }
-.discountdeck #menu-logo img {
-    display: block;
-    margin: 30px auto 35px auto;
-}
-.discountdeck .sidr {
-    display: none;
-    position: absolute;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    z-index: 999999;
-    width: 240px;
-    overflow-x: none;
-    overflow-y: auto;
-    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-    font-size: 15px;
-    background: #ffd2a9;
-}
-.discountdeck .sidr.right {
-    left: auto;
-    right: -260px;
-}
-.discountdeck .sidr.left {
-    left: -260px;
-    right: auto;
-}
-.discountdeck .sidr ul {
-    display: block;
-    margin: 0 0 15px;
-    padding: 0;
-}
-.discountdeck .sidr ul li {
-    display: block;
-    margin: 0;
-    line-height: 45px;
-    border: none;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-.discountdeck .sidr ul li:hover,
-.discountdeck .sidr ul li.active,
-.discountdeck .sidr ul li.sidr-class-active {
-    border-top: none;
-    background: #E02217;
-}
-.discountdeck .sidr ul li:hover>a,
-.discountdeck .sidr ul li:hover>span,
-.discountdeck .sidr ul li.active>a,
-.discountdeck .sidr ul li.active>span,
-.discountdeck .sidr ul li.sidr-class-active>a,
-.discountdeck .sidr ul li.sidr-class-active>span { background: #E02217 }
-.discountdeck .sidr ul li a,
-.discountdeck .sidr ul li span {
-    padding: 0 25px;
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    font-family: Open Sans;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 700;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-.discountdeck .sidr ul li a span {
-    display: inline-block;
-    padding-left: 0;
-    font-weight: 300;
-    font-size: 14px;
-}
-.discountdeck .sidr-open .wrap { width: 1200px }
-.discountdeck .sidr-open .fp-slidesNav { margin-left: -602px!important }
-.discountdeck .sidr-open .wrap .box { width: 40% }
-.discountdeck .sidr-open #main-nav { left: 274px }
-
-/*navigation bullets*/
-
-.discountdeck #fp-nav {
-    position: fixed;
-    z-index: 100;
-    margin-top: -32px;
-    top: 52%;
-    opacity: 1;
-}
-.discountdeck #fp-nav.left { left: 17px }
-.discountdeck #fp-nav span,
-.discountdeck .fp-slidesNav span { border-color: #aaa }
-.discountdeck #fp-nav li .active span,
-.discountdeck .fp-slidesNav .active span { background: #fff }
-.discountdeck .fp-slidesNav {
-    position: absolute;
-    z-index: 4;
-    margin-left: -523px!important;
-    text-align: left;
-    left: 50%;
-    opacity: 1;
-    top: 50%;
-    margin-top: 140px;
-}
-.discountdeck .fp-slidesNav.top { top: 17px }
-.discountdeck #fp-nav ul,
-.discountdeck .fp-slidesNav ul {
-    margin: 0;
-    padding: 0;
-}
-.discountdeck #fp-nav li,
-.discountdeck .fp-slidesNav li {
-    display: block;
-    width: 12px;
-    height: 12px;
-    margin: 7px;
-    position: relative;
-}
-.discountdeck .fp-slidesNav li {
-    display: inline-block;
-    margin: 3px;
-}
-.discountdeck .fp-slidesNav li a,
-.discountdeck #fp-nav li a {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border-radius: 50%;
-    background-color: #fff;
-    background-color: rgba(255, 255, 255, 0.3);
-    text-indent: -999em;
-    cursor: pointer;
-    position: absolute;
-}
-.discountdeck .fp-slidesNav li a,
-.discountdeck #fp-nav li a {
-    background-color: transparent;
-    box-shadow: inset 0 0 0 1px rgb(172, 172, 172);
-    -webkit-transition: box-shadow 0.3s ease;
-    transition: box-shadow 0.3s ease;
-}
-.discountdeck .fp-slidesNav li a:hover,
-.discountdeck .fp-slidesNav li a:focus,
-.discountdeck #fp-nav li a:hover,
-.discountdeck #fp-nav li a:focus { box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6) }
-.discountdeck .fp-slidesNav li a.active,
-.discountdeck #fp-nav li a.active { box-shadow: inset 0 0 0 8px white }
-
-
-/*---------------------------------------
-   ELEMENTS
------------------------------------------*/
-
-
-/*tabs*/
-
-.discountdeck .tabs-style-linemove nav {
-    background: rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    border-radius: 4px;
-}
-.discountdeck .tabs-style-linemove nav li:last-child::before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: #E02217;
-    content: '';
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-}
-.discountdeck .tabs-style-linemove nav li:first-child.tab-current ~ li:last-child::before {
-    -webkit-transform: translate3d(-400%,0,0);
-    transform: translate3d(-400%,0,0);
-}
-.discountdeck .tabs-style-linemove nav li:nth-child(1).tab-current ~ li:last-child::before {
-    -webkit-transform: translate3d(-300%,0,0);
-    transform: translate3d(-300%,0,0);
-}
-.discountdeck .tabs-style-linemove nav li:nth-child(2).tab-current ~ li:last-child::before {
-    -webkit-transform: translate3d(-200%,0,0);
-    transform: translate3d(-200%,0,0);
-}
-.discountdeck .tabs-style-linemove nav li:nth-child(3).tab-current ~ li:last-child::before {
-    -webkit-transform: translate3d(-100%,0,0);
-    transform: translate3d(-100%,0,0);
-}
-.discountdeck .tabs-style-linemove nav a {
-    padding: 20px 0;
-    color: #fff;
-    line-height: 1;
-    -webkit-transition: color 0.3s, -webkit-transform 0.3s;
-    transition: color 0.3s, transform 0.3s;
-}
-.discountdeck .tabs {
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    width: 100%;
-    min-height: 270px;
-}
-.discountdeck .tabs nav { text-align: center }
-.discountdeck .tabs nav ul {
-    position: relative;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: flex;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1200px;
-    list-style: none;
-    -ms-box-orient: horizontal;
-    -ms-box-pack: center;
-    -webkit-flex-flow: row wrap;
-    -moz-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-}
-.discountdeck .tabs nav ul li {
-    position: relative;
-    z-index: 1;
-    display: block;
-    margin: 0;
-    text-align: center;
-    -webkit-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-}
-.discountdeck .tabs nav a {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    line-height: 1;
-}
-.discountdeck .tabs nav a span { vertical-align: middle }
-.discountdeck .tabs nav a:focus { outline: none }
-.discountdeck .content-wrap { position: relative }
-.discountdeck .content-wrap section {
-    display: none;
-    margin: 0 auto;
-    padding: 15px 0 0 0;
-}
-.discountdeck .content-wrap section.content-current { display: block }
-
-/*carousel*/
-
-.discountdeck .fp-slidesContainer {
-    float: left;
-    position: relative;
-}
-.discountdeck .fp-controlArrow {
-    position: absolute;
-    z-index: 4;
-    top: 50%;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    margin-top: -38px;
-}
-.discountdeck .fp-controlArrow.fp-prev {
-    left: -70px;
-    width: 40px;
-    height: 74px;
-    border: none;
-    display: block;
-    background: url("https://res.cloudinary.com/dzixj0ktk/image/upload/v1566310888/bg_direction_nav_ywczjr.png") no-repeat 0 0;
-    cursor: pointer;
-    opacity: 0.6;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-.discountdeck .fp-controlArrow.fp-next {
-    right: -70px;
-    width: 40px;
-    height: 74px;
-    border: none;
-    display: block;
-    background: url("https://res.cloudinary.com/dzixj0ktk/image/upload/v1566310888/bg_direction_nav_ywczjr.png") no-repeat 0 0;
-    cursor: pointer;
-    opacity: 0.6;
-    background-position: 100% 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-.discountdeck .fp-controlArrow.fp-prev:hover,
-.discountdeck .fp-controlArrow.fp-next:hover { opacity: 1 }
 
 /*buttons*/
 
@@ -612,399 +355,3 @@ GLOBAL STYLES
 //     float: left;
 // }
 // .playstore-button:hover .playstore { background: url(../images/playstore2.png) }
-.discountdeck .simple-button {
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 4px;
-    color: #ffffff;
-    min-width: 130px;
-    margin-right: 10px;
-    text-decoration: none;
-    padding: 12px 25px;
-    margin-top: 25px;
-    float: left;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    background: #E02217;
-}
-.discountdeck .simple-button:hover {
-    color: #333;
-    background: #fff;
-}
-
-/*tooltip*/
-
-.discountdeck .tooltip { position: relative }
-.discountdeck .tooltip::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    bottom: 100%;
-    left: 50%;
-    pointer-events: none;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-.discountdeck .tooltip:hover::after { pointer-events: auto }
-.discountdeck .tooltip-content {
-    position: absolute;
-    z-index: 9999;
-    width: 335px;
-    left: 50%;
-    bottom: 100%;
-    color: #fffaf0;
-    background: transparent;
-    opacity: 0;
-    margin: 0 0 20px -167px;
-    cursor: default;
-    pointer-events: none;
-    -webkit-font-smoothing: antialiased;
-    -webkit-transition: opacity 0.3s 0.3s;
-    transition: opacity 0.3s 0.3s;
-}
-.discountdeck .tooltip:hover .tooltip-content {
-    opacity: 1;
-    pointer-events: auto;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-}
-.discountdeck .tooltip-content span { display: block }
-.discountdeck .tooltip-text {
-    border-bottom: 10px solid #fffaf0;
-    overflow: hidden;
-    -webkit-transform: scale3d(0,1,1);
-    transform: scale3d(0,1,1);
-    -webkit-transition: -webkit-transform 0.3s 0.3s;
-    transition: transform 0.3s 0.3s;
-}
-.discountdeck .tooltip:hover .tooltip-text {
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-    -webkit-transform: scale3d(1,1,1);
-    transform: scale3d(1,1,1);
-}
-.discountdeck .tooltip-inner {
-    background: rgba(0, 0, 0, 0.85);
-    padding: 30px;
-    min-height: 80px;
-    -webkit-transform: translate3d(0,100%,0);
-    transform: translate3d(0,100%,0);
-    webkit-transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-}
-.discountdeck .tooltip:hover .tooltip-inner {
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-.discountdeck .tooltip a {
-    color: #fff;
-    font-weight: bold;
-}
-.discountdeck .tooltip a:hover { color: #E02217 }
-.discountdeck .tooltip-content::after {
-    content: '';
-    bottom: -20px;
-    left: 50%;
-    border: solid transparent;
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: transparent;
-    border-top-color: #fffaf0;
-    border-width: 10px;
-    margin-left: -10px;
-}
-.discountdeck .tooltip-inner .icon {
-    float: left;
-    display: block;
-    color: #ddd;
-    font-size: 40px;
-    color: #E02217;
-    height: 80px;
-    margin-right: 30px;
-    line-height: 80px;
-}
-
-/*icons*/
-
-.discountdeck .icon {
-    font-weight: normal;
-    line-height: 20px;
-    margin-right: 5px;
-}
-.discountdeck .clients-content .icon,
-.discountdeck .tabs .icon,
-.discountdeck .features .icon { color: #E02217 }
-.discountdeck .simple-button .icon {
-    margin-right: 20px;
-    font-size: 18px;
-}
-
-
-/* --------------------------------------
-SECTIONS
------------------------------------------*/
-
-
-/*Features*/
-
-.discountdeck .features {
-    margin-top: 10px;
-    float: left;
-    margin-right: 50px;
-    margin-bottom: 0;
-}
-.discountdeck .features li { margin-bottom: 10px }
-
-/*Clients feedbacks*/
-
-.discountdeck .clients-content { position: relative }
-.discountdeck .clients-content .fp-controlArrow { display: none }
-.discountdeck .clients-content .fp-tableCell { height: 100%!important }
-.discountdeck .client-stars { float: right }
-.discountdeck .clients-content p { margin-top: 0 }
-
-/* Video Presentation*/
-
-.discountdeck .video-presentation {
-    width: 100%;
-    margin-top: 30px;
-}
-.discountdeck .video-presentation iframe { border: none }
-
-/*Screenshots*/
-
-.discountdeck .screenshots-wrapper,
-.discountdeck .section-image {
-    position: fixed;
-    left: 50%;
-    top: 44%;
-    overflow: hidden;
-    z-index: 1;
-    margin-top: -192px;
-    width: 232px;
-    height: 500px;
-    margin-left: 270px;
-    border-radius: 2px;
-}
-.discountdeck .screenshots-wrapper img,
-.discountdeck .section-image img {
-    width: 100%;
-    display: block;
-    max-height: 500px;
-}
-.discountdeck .screenshots-wrapper {
-    -webkit-transition: 0.9s;
-    -o-transition: 0.9s;
-    transition: 0.9s;
-    opacity: 0;
-}
-.discountdeck .active .screenshots-wrapper {
-    opacity: 1;
-    overflow: visible;
-}
-.discountdeck .screenshots-wrapper .fp-tableCell { height: 100%!important }
-.discountdeck .active .section-image img { opacity: 1 }
-
-/*Pricing*/
-
-.discountdeck .pricing-button {
-    padding: 20px 0;
-    box-sizing: border-box;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    background: rgba(0, 0, 0, 0.2);
-    font-weight: 700;
-}
-.discountdeck .price-table {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    text-align: center;
-    width: 31%;
-    margin-right: 2%;
-    margin-bottom: 1%;
-    float: left;
-    overflow: hidden;
-}
-.discountdeck .popular {
-    color: #fff;
-    padding: 30px 0;
-}
-.discountdeck .popular .icon { color: #fff }
-.discountdeck .package {
-    padding: 20px 0;
-    margin: 0;
-    background: rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-size: 22px;
-    font-family: Open Sans;
-    box-sizing: border-box;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-.discountdeck .popular .price { background-color: rgba(255,255,255, 0.2) !important }
-.discountdeck .dollar { font-size: 21px }
-.discountdeck .amount {
-    font-size: 28px;
-    line-height: 32px;
-}
-.discountdeck .specifications {
-    list-style: none;
-    text-align: left;
-    margin: 15px 20px;
-}
-.discountdeck .sidr-open .specifications { margin: 15px 10px }
-.discountdeck .specifications li { padding: 3px }
-.discountdeck .specifications .icon,
-.discountdeck .subscribers .icon {
-    padding-right: 10px;
-    color: #E02217;
-}
-.discountdeck .normal .btn-line { width: 150px }
-.discountdeck .popular .btn-line {
-    color: #fff !important;
-    border-color: #fff !important;
-}
-.discountdeck .price-table:hover .pricing-button,
-.discountdeck .price-table:hover .package { background: #E02217 }
-
-.discountdeck .thin {
-  width: 40%;
-}
-
-.discountdeck .wide {
-  width: 55%;
-}
-
-.discountdeck .subscribers, .price {
-  margin: 15px 20px;
-  line-height: 20px;
-}
-
-.discountdeck .price {
-  display: flex;
-  justify-content: space-around;
-}
-
-.discountdeck .fine-print {
-  font-size: 12px;
-  // text-align: center;
-  line-height: 1.2;
-  padding-right: 3%;
-}
-
-@media only screen and (max-width: 600px) {
-  .discountdeck .fine-print {
-    font-size: 10px;
-  }
-}
-
-/*Contact*/
-
-.discountdeck #contact-form, .discountdeck #application-form {
-    float: left;
-    margin-top: 10px;
-    width: 100%;
-}
-.discountdeck #contact-form input::-webkit-input-placeholder, .discountdeck #application-form input::-webkit-input-placeholder { color: #fff }
-.discountdeck #contact-form input::-moz-placeholder, .discountdeck #application-form input::-moz-placeholder {
-    color: #fff;
-    opacity: 1;
-}
-.discountdeck #contact-form input:-moz-placeholder, #application-form input:-moz-placeholder {
-    color: #fff;
-    opacity: 1;
-}
-.discountdeck #contact-form textarea::-webkit-input-placeholder { color: #fff }
-.discountdeck #contact-form textarea::-moz-placeholder {
-    color: #fff;
-    opacity: 1;
-}
-.discountdeck #contact-form textarea:-moz-placeholder {
-    color: #fff;
-    opacity: 1;
-}
-.discountdeck #contact-form textarea,
-.discountdeck #contact-form input {
-    outline: none;
-    background: none;
-    float: left;
-    color: #fff;
-    width: 47%;
-    box-sizing: border-box;
-    border-radius: 4px;
-    font-family: Open Sans;
-    border: none;
-    font-weight: 300;
-    font-size: 13px;
-    margin-right: 3%;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-
-.discountdeck #application-form input {
-  outline: none;
-  background: none;
-  color: #fff;
-  width: 47%;
-  box-sizing: border-box;
-  border-radius: 4px;
-  font-family: Open Sans;
-  border: none;
-  font-weight: 300;
-  font-size: 13px;
-  margin-right: 3%;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.3);
-  margin-bottom: 10px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.discountdeck #contact-form textarea:focus,
-.discountdeck #contact-form input:focus,
-.discountdeck #application-form input:focus { background: #E02217 }
-.discountdeck #contact-form textarea {
-    width: 97%;
-    resize: none;
-    height: 70px;
-    margin-bottom: 0;
-}
-
-.discountdeck #submit, .discountdeck #email-submit {
-font-weight: 700;
-border-radius: 4px;
-color: #ffffff;
-border: none;
-min-width: 120px;
-font-size: 15px;
-margin-right: 10px;
-text-decoration: none;
-outline: none;
-padding: 10px 20px;
-cursor: pointer;
-margin-top: 10px;
-margin-bottom: 10px;
--webkit-transition: 0.3s;
--o-transition: 0.3s;
-transition: 0.3s;
-background: #E02217;
-}
-
-.discountdeck #submit:hover, .discountdeck #email-submit:hover {
-    background: #fff;
-    color: #111;
-}

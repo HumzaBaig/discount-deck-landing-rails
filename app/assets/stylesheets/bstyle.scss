@@ -1,255 +1,38 @@
 /*responsive styles*/
 
 @media (max-width: 1140px) {
-
-
     .discountdeck {
         background-position-y: 0!important;
     }
 
-    .discountdeck #fp-nav {
-        display: none;
-    }
-
     .discountdeck #social-icons,
-.discountdeck #logo {
+    .discountdeck #logo {
         position: fixed;
         width: 100%;
         left: 0;
         text-align: center;
     }
-
-    .discountdeck .video-presentation iframe {
-        width: 100%;
-        height: auto;
-    }
-
-    .discountdeck .fp-slidesNav {
-        margin-left: -45%!important;
-        left: 50%;
-        bottom: 0;
-        top: 55%;
-    }
-
-    .discountdeck .sidr-open .wrap,
-.discountdeck .wrap {
-        width: 90%;
-    }
-
-    .discountdeck #section5 .fp-slidesNav {
-        display: none;
-    }
-
-    .discountdeck #hand {
-        left: auto;
-        right: 0;
-        margin-left: inherit;
-    }
-
-    .discountdeck .screenshots-wrapper,
-.discountdeck .section-image {
-        left: auto;
-        right: 22px;
-        margin-left: inherit;
-    }
 }
 
 @media (max-width: 870px) {
-
     .discountdeck h1, .discountdeck h2, .discountdeck h3 {
         font-size: 40px;
-    }
-
-    .sub-header {
-      font-size: 23px;
-    }
-
-    .discountdeck #hand,
-.discountdeck .screenshots-wrapper,
-.discountdeck .section-image {
-        display: none;
-    }
-
-    .discountdeck .sidr-open .wrap .box,
-.discountdeck .box {
-        width: 100%;
-        text-align: center;
-        font-size: 14px;
-    }
-
-    .discountdeck #menu-logo {
-        display: none;
-    }
-
-    .discountdeck .sidr ul {
-        margin-top: 35%;
-    }
-
-    .discountdeck #sidr {
-        width: 200px;
-        z-index: 100;
-    }
-
-    .discountdeck .simple-button {
-        float: none;
-        display: block;
-        font-size: 14px;
-        max-width: 180px;
-        margin: 25px auto;
-    }
-
-    .discountdeck .sidr ul li a, .discountdeck .sidr ul li span {
-        font-size: 11px;
-        padding: 0 18px;
-    }
-
-    .discountdeck .features {
-        margin-top: 10px;
-        width: 50%;
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-
-    .discountdeck .tabs {
-        width: 90%;
-    }
-
-    .discountdeck .sidr-open #main-nav {
-        left: 14px;
-        z-index: 200;
-    }
-
-    .discountdeck .tabs-style-linemove nav a {
-        padding: 15px 0;
-    }
-
-    .discountdeck .video-presentation iframe {
-        width: 82%;
-    }
-
-    .discountdeck .client-name {
-        float: left;
-    }
-
-    .discountdeck .fp-slidesNav {
-        margin-left: -5%!important;
-        left: 50%;
-        bottom: 0;
-        top: 55%;
-    }
-
-    .discountdeck .specifications {
-        text-align: center;
-    }
-
-    .discountdeck .active .screenshots-wrapper {
-        opacity: 1;
-        overflow: visible;
-        display: block;
-        background: rgba(0, 0, 0, 0.2);
-        padding: 10px;
-        max-width: 180px;
-        right: 50%;
-        margin-right: -100px;
-        border-radius: 7px;
-        height: auto;
-    }
-
-    .discountdeck .screenshots-content {
-        display: none;
-    }
-
-    .discountdeck .fp-controlArrow.fp-next {
-        right: -30px;
-        width: 20px;
-    }
-
-    .discountdeck .fp-controlArrow.fp-prev {
-        left: -30px;
-        width: 20px;
     }
 }
 
 @media (max-width: 640px) {
-
-
     .discountdeck h1, .discountdeck h2, .discountdeck h3 {
         font-size: 26px;
         line-height: 1;
     }
 
-    .sub-header {
-      font-size: 16px;
-      line-height: 1.2;
-      margin-bottom: 15px!important;
-    }
-
-    .discountdeck .sidr-open .wrap .box, .discountdeck .box {
-        width: 100%;
-        text-align: center;
-        font-size: 11px;
-        line-height: 1.2;
-    }
-
-    .discountdeck .simple-button .icon {
-        margin-right: 10px;
-        font-size: 12px;
-    }
-
-    .discountdeck .playstore,
-.discountdeck .appstore {
-        margin-top: -4px;
-    }
-
-    .discountdeck .simple-button {
-        float: none;
-        display: block;
-        font-size: 11px;
-        max-width: 100px;
-        margin: 25px auto;
-        padding: 10px 15px;
-    }
-
     .discountdeck #logo {
         display: block;
-        top: 3%;
+        top: 2%;
     }
 
     .discountdeck #logo img {
-        max-width: 120px;
-    }
-
-    .discountdeck .tooltip-inner .icon {
-        float: left;
-        display: block;
-        font-size: 14px;
-        height: AUTO;
-        margin-right: 5px;
-        line-height: inherit;
-    }
-
-    .discountdeck .tooltip-inner {
-        background: rgba(0, 0, 0, 0.85);
-        padding: 20px;
-        min-height: inherit;
-    }
-
-    .discountdeck #main-nav {
-        left: 10px;
-        top: 1%;
-        font-size: 32px;
-    }
-
-    .discountdeck #main-nav:hover span {
-        color: inherit!important;
-    }
-
-    .discountdeck .sidr ul li {
-        line-height: 35px;
-    }
-
-    .discountdeck .fp-slidesNav {
-        display: none;
+        max-width: 300px;
     }
 
     .discountdeck #social-icons a i {
@@ -257,66 +40,5 @@
         width: 21px;
         height: 21px;
         line-height: 22px;
-    }
-
-    .discountdeck .package {
-        padding: 15px 0;
-        margin: 0;
-        background: rgba(0, 0, 0, 0.2);
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
-
-    .discountdeck .amount {
-        font-size: 15px;
-        line-height: 1;
-    }
-
-    .discountdeck .specifications {
-        list-style: none;
-        text-align: left;
-        margin: 10px 5px;
-    }
-
-    .discountdeck .pricing-button {
-        padding: 15px 0;
-    }
-
-    .discountdeck .specifications .icon {
-        display: none;
-    }
-
-    .discountdeck #contact-form textarea, .discountdeck #contact-form input {
-        font-size: 11px;
-        margin-right: 3%;
-        padding: 5px;
-    }
-
-    .discountdeck #contact-form textarea {
-        height: 50px;
-    }
-
-    .discountdeck #submit {
-        padding: 8px 17px;
-        font-size: 11px;
-    }
-
-    .discountdeck .tabs nav ul li {
-        display: inline-block;
-    }
-
-    .discountdeck #contact-form {
-        float: left;
-        margin-top: 10px;
-    }
-
-    .discountdeck #section8 .features {
-        margin-top: 0;
-    }
-
-    .discountdeck .active .screenshots-wrapper {
-        max-width: 140px;
-        margin-top: -130px;
-        margin-right: -80px;
     }
 }
