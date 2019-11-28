@@ -1,346 +1,4 @@
-/* --------------------------------------
-GLOBAL STYLES (including resets)
------------------------------------------*/
-
-
-.r-button{
-  --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
-  --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
-  --uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
-  --uirButtonBorderStyle: var(--rButtonBorderWidth, solid);
-  --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
-  --uirButtonFontFamily: var(--rButtonFontFamily, inherit);
-  --uirButtonFontSize: var(--rButtonFontSize,  inherit);
-  --uirButtonColor: var(--rButtonColor);
-
-  background-color: var(--uirButtonBackgroundColor);
-  padding: var(--uirButtonPadding);
-
-  border-width: var(--uirButtonBorderWidth);
-  border-style: var(--uirButtonBorderStyle);
-  border-color: var(--uirButtonBorderColor);
-
-  cursor: pointer;
-
-  font-family: var(--uirButtonFontFamily);
-  font-size: var(--uirButtonFontSize);
-}
-
-.r-button::-moz-focus-inner,
-.r-button[type="button"]::-moz-focus-inner,
-.r-button[type="reset"]::-moz-focus-inner,
-.r-button[type="submit"]::-moz-focus-inner {
-
-  /* Remove the inner border and padding in Firefox. */
-
-  border-style: none;
-  padding: 0;
-}
-
-/* The component will reset browser's styles of link */
-
-.r-link{
-  --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
-  --uirLinkTextColor: var(--rLinkTextColor);
-  --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
-  display: var(--uirLinkDisplay) !important;
-  color: var(--uirLinkTextColor) !important;
-  text-decoration: var(--uirLinkTextDecoration) !important;
-}
-
-.discountdeck,
-.discountdeck body {
-    margin: 0;
-    height: 100%;
-    padding: 0;
-    overflow: hidden;
-}
-.discountdeck a {
-    color: #fff;
-    text-decoration: none;
-}
-.discountdeck strong { font-weight: 700; }
-.discountdeck {
-    background: url("https://res.cloudinary.com/dzixj0ktk/image/upload/v1574326264/bg_ui2ssb.svg");
-    background-size: cover;
-    color: #333;
-    font-family: Open Sans;
-}
-.discountdeck ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-
-
-/*---------------------------------------
-   TYPOGRAPHY
------------------------------------------*/
-
-
-/* HEADINGS */
-
-.discountdeck h1,
-.discountdeck h2,
-.discountdeck h3 {
-    color: #ffffff;
-    margin-bottom: 30px;
-    font-size: 50px;
-    font-weight: 600;
-    font-family: 'Montserrat';
-    line-height: 1.2;
-    margin-top: 20px;
-}
-.discountdeck h4,
-.discountdeck h5,
-.discountdeck h6 { font-weight: 300 }
-
-
-
-/*---------------------------------------
-   LAYOUT
------------------------------------------*/
-
-
-
-/*Header*/
-
-.discountdeck header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 12.5%;
-}
-
-/*Logo*/
-
-.discountdeck #logo {
-    position: fixed;
-    left: 2%;
-}
-
-.discountdeck #logo img {
-  max-width: 375px;
-}
-
-.discountdeck .header-nav {
-  position: fixed;
-  right: 2%;
-}
-
-.discountdeck .header-nav li {
-  font-family: "Montserrat";
-
-  transition: all 1s ease;
-}
-
-// header-nav-link-button
-
-/*
-=====
-CORE STYLES
-=====
-*/
-
-.ai-element{
-	--uiaiElementDisplay: var(--aiElementDisplay, inline-flex);
-	--uiaiElementPadding: var(--aiElementPadding, var(--aiElementPaddingTop, 0) var(--aiElementPaddingRight, 0) var(--aiElementPaddingBottom, 0) var(--aiElementPaddingLeft, 0));
-	--uiaiElementColor: var(--aiElementColor);
-
-	display: var(--uiaiElementDisplay);
-	position: relative;
-	overflow: hidden;
-}
-
-a.ai-element{
-	padding: var(--uiaiElementPadding);
-}
-
-button.ai-element{
-	--rButtonPadding: var(--uiaiElementPadding);
-}
-
-.ai-element__label{
-	color: var(--uiaiElementColor);
-}
-
-.ai-element_type1{
-	--uiaiElementLineWeight: var(--aiElementLineWeight, 2px);
-	--uiaiElementLineColor: var(--aiElementLineColor, #000);
-}
-
-.ai-element_type1::before,
-.ai-element_type1::after{
-	width: 100%;
-	height: var(--uiaiElementLineWeight);
-	left: 0;
-}
-
-.ai-element_type1::before{
-	top: 0;
-}
-
-.ai-element_type1::after{
-	bottom: 0;
-}
-
-.ai-element_type1 .ai-element__label::before,
-.ai-element_type1 .ai-element__label::after{
-	width: var(--uiaiElementLineWeight);
-	height: 100%;
-	top: 0;
-}
-
-.ai-element_type1 .ai-element__label::before{
-	left: 0;
-}
-
-.ai-element_type1 .ai-element__label::after{
-	right: 0;
-}
-
-.ai-element_type1::before,
-.ai-element_type1::after,
-.ai-element_type1 .ai-element__label::before,
-.ai-element_type1 .ai-element__label::after{
-	content: "";
-	background-color: var(--uiaiElementLineColor);
-	position: absolute;
-	opacity: 1;
-
-	will-change: transform, opacity;
-	transition-property: transform, opacity;
-}
-
-.ai-element_type1:hover::before,
-.ai-element_type1:hover::after,
-.ai-element_type1:hover .ai-element__label::before,
-.ai-element_type1:hover .ai-element__label::after{
-	opacity: 0;
-}
-
-/*
-=====
-BUTTON EFFECTS
-=====
-*/
-
-.ai-element4::before,
-.ai-element4::after,
-.ai-element4 .ai-element__label::before,
-.ai-element4 .ai-element__label::after{
-	transition-timing-function: ease-out;
-	transition-duration: .2s, .2s;
-	transform: translate3d(0, 0, 0);
-}
-
-.ai-element4:hover::before,
-.ai-element4:hover::after,
-.ai-element4:hover .ai-element__label::before,
-.ai-element4:hover .ai-element__label::after{
-	transition-delay: 0s, .05s;
-}
-
-.ai-element4:hover::before{
-	transform: translate3d(-100%, 0, 0);
-}
-
-.ai-element4:hover::after{
-	transform: translate3d(100%, 0, 0);
-}
-
-.ai-element4:hover .ai-element__label::before{
-	transform: translate3d(0, 100%, 0);
-}
-
-.ai-element4:hover .ai-element__label::after{
-	transform: translate3d(0, -100%, 0);
-}
-
-/*
-=====
-SETTINGS
-=====
-*/
-
-.ai-element{
-	--aiElementLineWeight: 2px;
-	--aiElementLineColor: white;
-	--aiElementColor: white;
-	--aiElementColorHover: #1b646f;
-}
-
-.ai-element_type1 {
-	--aiElementPadding: 10px 15px;
-}
-
-/*Main Section*/
-.discountdeck main {
-  width: 100%;
-  height: 75%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.discountdeck main h1 {
-  color: white;
-  text-shadow: 0px 10px 5px rgba(0,0,0,0.1),
-                10px 15px 5px rgba(0,0,0,0.05),
-               -10px 15px 5px rgba(0,0,0,0.05);
-}
-
-/*Social Icons*/
-
-.discountdeck #social-icons {
-    position: fixed;
-    bottom: 2%;
-    left: 2%;
-}
-.discountdeck #social-icons ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-.discountdeck #social-icons li {
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 5px;
-}
-.discountdeck #social-icons a {
-    font-size: 28px;
-    color: #fff;
-    text-decoration: none;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-.discountdeck #social-icons a i {
-    font-style: normal;
-    font-weight: normal;
-    opacity: 1;
-    display: block;
-    font-variant: normal;
-    font-size: 13px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    width: 24px;
-    height: 24px;
-    text-align: center;
-    line-height: 27px;
-    text-transform: none;
-    -webkit-font-smoothing: antialiased;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-.discountdeck #social-icons a:hover i {
-    border: 1px solid #1b646f;
-    color: #1b646f;
-}
-
-/*buttons*/
+/*app store buttons*/
 
 // .appstore {
 //     background: url(../images/appstore.png);
@@ -358,3 +16,166 @@ SETTINGS
 //     float: left;
 // }
 // .playstore-button:hover .playstore { background: url(../images/playstore2.png) }
+
+
+body, html {
+  height: 100%;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background: url("https://res.cloudinary.com/dzixj0ktk/image/upload/v1574326264/bg_ui2ssb.svg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Montserrat";
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10% 85% 5%;
+  grid-template-areas:
+    "header header"
+    "maincta mainscreenshots"
+    "footer footer";
+}
+
+#header {
+  grid-area: header;
+
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  #main-logo {
+    max-width: 375px;
+  }
+
+  .nav-btn {
+    padding: 10px 15px;
+
+    color: white;
+    border: 2px white solid;
+    border-radius: 7.5px;
+
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
+    i {
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-align: center;
+      line-height: 27px;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    &:hover {
+      border: 2px solid #1b646f;
+      color: #1b646f;
+    }
+  }
+
+}
+#main-cta {
+  grid-area: maincta;
+
+  margin-left: 2%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-text {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    text-shadow: 0px 10px 5px rgba(0,0,0,0.1),
+                 10px 15px 5px rgba(0,0,0,0.05),
+                 -10px 15px 5px rgba(0,0,0,0.05);
+  }
+}
+#main-screenshots {
+  grid-area: mainscreenshots;
+
+  margin-right: 2%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-img {
+    width: 52.5%;
+  }
+}
+#footer {
+  grid-area: footer;
+
+  margin-left: 2%;
+  margin-right: 2%;
+
+  .social-icons {
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
+    .social-icon {
+      list-style-type: none;
+      display: inline-block;
+
+      width: 24px;
+      height: 24px;
+
+      margin-right: 5px;
+
+      a {
+
+        font-size: 28px;
+        color: #fff;
+        text-decoration: none;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+
+        i {
+          font-style: normal;
+          font-weight: normal;
+          opacity: 1;
+          display: block;
+          font-variant: normal;
+          font-size: 13px;
+          border: 1px solid #fff;
+          border-radius: 4px;
+          width: 24px;
+          height: 24px;
+          text-align: center;
+          line-height: 27px;
+          text-transform: none;
+          -webkit-font-smoothing: antialiased;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+
+          &:hover {
+            border: 1px solid #1b646f;
+            color: #1b646f;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,54 +1,54 @@
-/*responsive styles*/
-
-@media (max-width: 1140px) {
-    .discountdeck {
-        background-position-y: 0!important;
-    }
-
-    .discountdeck #social-icons,
-    .discountdeck #logo {
-        position: fixed;
-        width: 100%;
-        left: 0;
-        text-align: center;
-    }
-}
-
-@media (max-width: 870px) {
-    .discountdeck h1, .discountdeck h2, .discountdeck h3 {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 640px) {
-    .discountdeck h1, .discountdeck h2, .discountdeck h3 {
-        font-size: 26px;
-        line-height: 1;
-    }
-
-    .discountdeck #logo {
-        display: block;
-        top: 2%;
-    }
-
-    .discountdeck #logo img {
-        max-width: 300px;
-    }
-
-    .discountdeck .header-nav {
-        display: none;
-    }
-
-    .discountdeck main h1 {
-      text-shadow: 0px 5px 5px rgba(0,0,0,0.1),
-                    10px 10px 5px rgba(0,0,0,0.05),
-                   -10px 10px 5px rgba(0,0,0,0.05);
-    }
-
-    .discountdeck #social-icons a i {
-        font-size: 11px;
-        width: 21px;
-        height: 21px;
-        line-height: 22px;
-    }
-}
+// /*responsive styles*/
+//
+// @media (max-width: 1140px) {
+//     .discountdeck {
+//         background-position-y: 0!important;
+//     }
+//
+//     .discountdeck #social-icons,
+//     .discountdeck #logo {
+//         position: fixed;
+//         width: 100%;
+//         left: 0;
+//         text-align: center;
+//     }
+// }
+//
+// @media (max-width: 870px) {
+//     .discountdeck h1, .discountdeck h2, .discountdeck h3 {
+//         font-size: 40px;
+//     }
+// }
+//
+// @media (max-width: 640px) {
+//     .discountdeck h1, .discountdeck h2, .discountdeck h3 {
+//         font-size: 26px;
+//         line-height: 1;
+//     }
+//
+//     .discountdeck #logo {
+//         display: block;
+//         top: 2%;
+//     }
+//
+//     .discountdeck #logo img {
+//         max-width: 300px;
+//     }
+//
+//     .discountdeck .header-nav {
+//         display: none;
+//     }
+//
+//     .discountdeck main h1 {
+//       text-shadow: 0px 5px 5px rgba(0,0,0,0.1),
+//                     10px 10px 5px rgba(0,0,0,0.05),
+//                    -10px 10px 5px rgba(0,0,0,0.05);
+//     }
+//
+//     .discountdeck #social-icons a i {
+//         font-size: 11px;
+//         width: 21px;
+//         height: 21px;
+//         line-height: 22px;
+//     }
+// }
