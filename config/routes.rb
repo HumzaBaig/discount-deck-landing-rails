@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   match '/privacy-policy', to: 'static#privacy_policy', via: 'get', as: :privacy_policy
   match '/cookie-policy', to: 'static#cookie_policy', via: 'get', as: :cookie_policy
 
+  # blog posts
+  match '/case-study', to: 'static#case_study', via: 'get', as: :case_study
+
   # influencer landing pages
   get '/brianda', to: 'briandas#new'
   get '/john_gillon', to: 'john_gillons#new'
