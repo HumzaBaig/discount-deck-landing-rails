@@ -27,7 +27,7 @@ body.blog-post {
 		margin-bottom:27px;
 	}
 	.section-title span {
-		border-bottom:1px solid rgba(0,0,0,.44);
+		border-bottom:1px solid rgba(0,0,0,0.54);
 		display:inline-block;
 		padding-bottom:20px;
 		margin-bottom:-1px;
@@ -88,7 +88,7 @@ body.blog-post {
 		text-decoration:none;
 	}
 	.listfeaturedtag h4.card-text,.listrecent h4.card-text {
-		color:rgba(0,0,0,.44);
+		color:rgba(0,0,0,0.54);
 		font-size:0.95rem;
 		line-height:1.4;
 		font-weight:400;
@@ -123,7 +123,7 @@ body.blog-post {
 	}
 	.post-top-meta span {
 		font-size:0.9rem;
-		color:rgba(0,0,0,.44);
+		color:rgba(0,0,0,.54);
 		display:inline-block;
 	}
 	.post-top-meta .author-description {
@@ -132,12 +132,12 @@ body.blog-post {
 		font-size:0.95rem;
 	}
 	.post-top-meta .author-social {
-		color: #2373BF;
+		color: #58CBC5;
 		margin-top: 5px;
 		transition: all 0.2s ease;
 	}
 	.post-top-meta .author-social a:hover {
-		color: #365963;
+		color: #81DD5C;
 	}
 	.author-meta {
 		flex:1 1 auto;
@@ -149,7 +149,7 @@ body.blog-post {
 		display:inline-block;
 	}
 	span.post-date,span.post-read {
-		color:rgba(0,0,0,.44);
+		color:rgba(0,0,0,0.54);
 	}
 	span.post-read-more {
 		align-items:center;
@@ -158,7 +158,7 @@ body.blog-post {
 		margin-top:8px;
 	}
 	span.post-read-more a {
-		color:rgba(0,0,0,.44);
+		color:rgba(0,0,0,0.54);
 	}
 	span.post-name a,span.post-read-more a:hover {
 		color:rgba(0,0,0,.8);
@@ -211,25 +211,33 @@ body.blog-post {
 		font-family:Righteous;
 	}
 	.mainheading h1.posttitle {
-		font-weight:700;
+		font-weight: 500;
 		margin-bottom:1rem;
+		color: rgba(0, 0, 0, 0.84);
+		font-family: Merriweather;
+	}
+	.mainheading h5.postsubtitle {
+		font-weight: 500;
+		margin-bottom:1rem;
+		color: rgba(0, 0, 0, 0.44);
+		font-family: sans-serif;
 	}
 	.footer {
 		border-top:1px solid rgba(0,0,0,.05)!important;
 		padding-top:15px;
 		padding-bottom:12px;
 		font-size:0.8rem;
-		color:rgba(0,0,0,.44);
+		color:rgba(0,0,0,0.54);
 		margin-top:50px;
 	}
 	.link-dark {
 		color:rgba(0,0,0,.8);
 	}
 	.article-post {
-		font-family:Merriweather;
+		font-family: Merriweather;
 		font-size:1.2rem;
 		line-height:1.8;
-		color:rgba(0,0,0,.8);
+		color:rgba(0,0,0,0.8);
 	}
 	blockquote {
 		border-left:4px solid #00ab6b;
@@ -239,6 +247,12 @@ body.blog-post {
 	}
 	.article-post p,.article-post blockquote {
 		margin:0 0 1.5rem 0;
+	}
+	.article-post h4 {
+		margin-top: 2em;
+		margin-bottom: 1rem;
+		font-family: sans-serif;
+		font-weight: 600;
 	}
 	.featured-image {
 		display:block;
@@ -317,8 +331,8 @@ body.blog-post {
 }
 .blog-post {
 	.share,.share a {
-		color:rgba(0,0,0,.44);
-		fill:rgba(0,0,0,.44);
+		color:rgba(0,0,0,0.54);
+		fill:rgba(0,0,0,0.54);
 	}
 	.graybg {
 		background-color:#fafafa;
