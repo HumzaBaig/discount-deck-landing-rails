@@ -1078,3 +1078,12 @@ body, .main p {
 
 }
 /* end of min-width width 1200px */
+
+@media (max-width:576px) {
+	.input-solid-lg, .btn-solid-lg {
+		width: 100%;
+	}
+	.btn-solid-lg {
+		margin-top: 1em;
+	}
+}

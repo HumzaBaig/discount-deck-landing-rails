@@ -11,10 +11,10 @@ function emailAddressInput(e) {
       },
       success: function (res) {
         document.getElementById("email-form").reset();
-        $('#email-submit').html('<span class="icon flaticon-check2"></span> Thank You');
+        $('#email-submit').html('<i class="fas fa-check"></i> Got it!');
       },
       error: function (err) {
-        $('#email-submit').html('<span class="icon flaticon-error4"></span> ERROR');
+        $('#email-submit').html('<i class="fas fa-times"></i> Error');
         console.log("error: " + err);
       }
     });
