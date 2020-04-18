@@ -36,18 +36,24 @@ Colors:
 /******************************/
 /*     00. Email Submission     */
 /******************************/
+.form-inline {
+	background-color: white;
+	border-style: none;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+}
+
 .main {
 	.input-solid-lg {
 		display: inline-block;
-		padding: 1.075rem 2.625rem 1.075rem 2.625rem;
-		border-radius: 2rem;
+		padding: 0.875rem 2.625rem 0.875rem 0.825rem;
 	  border-width: 0;
 		color: #2373BF;
-		font: 700 0.75rem/0 "Montserrat", sans-serif;
+		font: 500 1rem/0 "Montserrat", sans-serif;
 		text-decoration: none;
 		transition: all 0.2s ease;
 	  opacity: .5;
-	  min-width: 65%;
+	  min-width: 60%;
 	  margin-right: 0.5rem;
 	}
 
@@ -159,7 +165,7 @@ body, .main p {
 		display: inline-block;
 		padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
 		border: 0.125rem solid #2373BF;
-		border-radius: 2rem;
+		border-radius: 0.5rem;
 		background-color: #2373BF;
 		color: #fff;
 		font: 700 0.75rem/0 "Montserrat", sans-serif;
@@ -175,9 +181,9 @@ body, .main p {
 
 	.btn-solid-lg {
 		display: inline-block;
-		padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+		padding: 1.375rem 1rem 1.375rem 1rem;
 		border: 0.125rem solid #2373BF;
-		border-radius: 2rem;
+		border-radius: 0.5rem;
 		background-color: #2373BF;
 		color: #fff;
 		font: 700 0.75rem/0 "Montserrat", sans-serif;
@@ -772,6 +778,7 @@ body, .main p {
 
 	.header .btn-solid-lg {
 		margin-right: 0.5rem;
+		margin-left: auto;
 	}
 }
 
