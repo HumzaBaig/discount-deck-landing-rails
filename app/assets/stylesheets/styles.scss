@@ -1089,6 +1089,10 @@ body, .main p {
 	.input-solid-lg, .btn-solid-lg {
 		width: 100%;
 		padding-bottom: 0.275rem;
+
+		&::placeholder {
+			overflow: visible;
+		}
 	}
 	.btn-solid-lg {
 		margin-top: 1em;
