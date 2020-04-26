@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="discountdeck">
+  <head>
+    <title>Discount Deck | Case Study Article</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <meta property="og:title" content="How I used an audience intelligence tool to solve the chicken-or-the-egg problem." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.discountdeck.com/a-case-for-investment-in-discount-deck" />
+    <meta property="og:image" content="https://res.cloudinary.com/dzixj0ktk/image/upload/v1587936151/Screen_Shot_2020-04-26_at_4.21.44_PM_hoai40.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%= favicon_link_tag asset_path('favicon.png'), :rel => 'icon', :type =>  'image/png' %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- WEB FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+  </head>
+
+  <body data-turbolinks="false" data-spy="scroll" data-target=".fixed-top">
+    <%= yield %>
+  </body>
+</html>
