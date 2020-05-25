@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   match '/cookie-policy', to: 'static#cookie_policy', via: 'get', as: :cookie_policy
 
   # blog posts
-  match '/a-case-for-investment-in-discount-deck', to: 'static#case_study', via: 'get', as: :case_study
+  # match '/a-case-for-investment-in-discount-deck', to: 'static#case_study', via: 'get', as: :case_study
 
   # influencer landing pages
   get '/brianda', to: 'briandas#new'
