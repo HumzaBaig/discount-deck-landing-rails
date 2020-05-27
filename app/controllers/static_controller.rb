@@ -4,6 +4,10 @@ class StaticController < ApplicationController
     # Homepage
   end
 
+  def old_case_study
+    redirect_to :action => "case_study", :status => 302
+  end
+
   def case_study
     render :layout => 'case_study_layout'
     # Article Page

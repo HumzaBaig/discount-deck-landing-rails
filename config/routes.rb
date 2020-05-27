@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   # blog index page
   match '/blog', to: 'static#blog', via: 'get', as: :blog
 
+  # deprecated blog posts
+  match '/a-case-for-investment-in-discount-deck', to: 'static#old_case_study', via: 'get', as: :old_case_study
+
   # blog posts
   match '/blog/houston_tech_startup_solves_what_came_first_the_chicken_or_the_egg', to: 'static#case_study', via: 'get', as: :case_study
 
