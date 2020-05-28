@@ -5,7 +5,7 @@ class StaticController < ApplicationController
   end
 
   def old_case_study
-    redirect_to :action => "case_study", :status => 302
+    redirect_to :action => "case_study", :status => 301
   end
 
   def case_study
