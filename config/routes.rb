@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   match '/a-case-for-investment-in-discount-deck', to: 'static#old_case_study', via: 'get', as: :old_case_study
 
   # blog posts
-  match '/blog/how_I_solved:_what_came_first_the_chicken_or_the_egg', to: 'static#case_study', via: 'get', as: :case_study
+  match '/blog/what_came_first_the_chicken_or_the_egg', to: 'static#case_study', via: 'get', as: :case_study
 
   # influencer landing pages
   get '/brianda', to: 'briandas#new'
