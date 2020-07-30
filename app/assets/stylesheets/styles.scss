@@ -32,6 +32,15 @@ Colors:
 - Backgrounds - denim #2f2c3d
 ******************************************/
 
+@font-face {
+  font-family: 'Keep Calm Medium';
+  src: font-url('KeepCalm-Medium.ttf');
+}
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: font-url('AVENIRNEXTCYR-REGULAR.OTF');
+}
+
 
 /******************************/
 /*     00. Email Submission     */
@@ -78,18 +87,18 @@ html {
 
 body, .main p {
 	color: #f1f1f8;
-	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+	font: 400 0.875rem/1.375rem "Avenir Next Cyr", sans-serif;
 }
 
 .main {
 	.p-large {
 		color: #f1f1f8;
-		font: 400 1rem/1.5rem "Open Sans", sans-serif;
+		font: 400 1rem/1.5rem "Avenir Next Cyr", sans-serif;
 	}
 
 	.p-small {
 		color: #f1f1f8;
-		font: 400 0.75rem/1.25rem "Open Sans", sans-serif;
+		font: 400 0.75rem/1.25rem "Avenir Next Cyr", sans-serif;
 	}
 
 	.p-heading {
@@ -107,37 +116,37 @@ body, .main p {
 
 	h1 {
 		color: #f1f1f8;
-		font: 700 2.5rem/2.875rem "Montserrat", sans-serif;
+		font: 500 2.5rem/2.875rem "Keep Calm Medium", sans-serif;
 	}
 
 	h2 {
 		color: #f1f1f8;
-		font: 700 2.25rem/2.75rem "Montserrat", sans-serif;
+		font: 500 2.25rem/2.75rem "Keep Calm Medium", sans-serif;
 	}
 
 	h3 {
 		color: #f1f1f8;
-		font: 700 1.75rem/2.125rem "Montserrat", sans-serif;
+		font: 500 1.75rem/2.125rem "Keep Calm Medium", sans-serif;
 	}
 
 	h4 {
 		color: #f1f1f8;
-		font: 700 1.375rem/1.75rem "Montserrat", sans-serif;
+		font: 500 1rem/1.75rem "Keep Calm Medium", sans-serif;
 	}
 
 	h5 {
 		color: #f1f1f8;
-		font: 700 1.125rem/1.625rem "Montserrat", sans-serif;
+		font: 500 1.125rem/1.625rem "Keep Calm Medium", sans-serif;
 	}
 
 	h6 {
 		color: #f1f1f8;
-		font: 700 1rem/1.5rem "Montserrat", sans-serif;
+		font: 500 1rem/1.5rem "Keep Calm Medium", sans-serif;
 	}
 
 	a {
 		color: #f1f1f8;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 	a:hover {
@@ -154,7 +163,7 @@ body, .main p {
 	}
 
 	.testimonial-text {
-		font: italic 400 1rem/1.5rem "Open Sans", sans-serif;
+		font: italic 400 1rem/1.5rem "Avenir Next Cyr", sans-serif;
 	}
 
 	.testimonial-author {
@@ -182,18 +191,21 @@ body, .main p {
 	.btn-solid-lg {
 		display: inline-block;
 		padding: 1.375rem 1rem 1.375rem 1rem;
-		border: 0.125rem solid #2373BF;
+		border: 0.125rem solid #365963;
 		border-radius: 0.5rem;
-		background-color: #2373BF;
+		background-color: #365963;
 		color: #fff;
 		font: 700 0.75rem/0 "Montserrat", sans-serif;
 		text-decoration: none;
 		transition: all 0.2s ease;
+
+		box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.2);
+		// text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 	}
 
 	.btn-solid-lg:hover {
 		background-color: transparent;
-		color: #2373BF;
+		color: #365963;
 		text-decoration: none;
 	}
 
@@ -281,7 +293,7 @@ body, .main p {
 		left: 1.375rem;
 		color: #f1f1f8;
 		opacity: 1;
-		font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
+		font: 400 0.875rem/1.375rem "Avenir Next Cyr", sans-serif;
 		cursor: text;
 		transition: all 0.2s ease;
 	}
@@ -316,7 +328,7 @@ body, .main p {
 		border-radius: 0.25rem;
 		background-color: #413d52;
 		color: #f1f1f8;
-		font: 400 0.875rem/1.875rem "Open Sans", sans-serif;
+		font: 400 0.875rem/1.875rem "Avenir Next Cyr", sans-serif;
 		transition: all 0.2s ease;
 		-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
 	}
@@ -374,7 +386,7 @@ body, .main p {
 		border-radius: 0.25rem;
 		background-color: #413d52;
 		color: #f1f1f8;
-		font: 400 0.875rem/1.75rem "Open Sans", sans-serif;
+		font: 400 0.875rem/1.75rem "Helvetica Neue", sans-serif;
 		transition: all 0.2s ease;
 	}
 
@@ -392,7 +404,7 @@ body, .main p {
 	}
 
 	.checkbox {
-		font: 400 0.75rem/1.25rem "Open Sans", sans-serif;
+		font: 400 0.75rem/1.25rem "Avenir Next Cyr", sans-serif;
 	}
 
 	input[type='checkbox'] {
@@ -417,7 +429,7 @@ body, .main p {
 		border-radius: 1.5rem;
 		background-color: #2373BF;
 		color: #fff;
-		font: 700 0.75rem/1.75rem "Montserrat", sans-serif;
+		font: 700 0.75rem/1.75rem "Keep Calm Medium", sans-serif;
 		cursor: pointer;
 		transition: all 0.2s ease;
 	}
@@ -435,7 +447,7 @@ body, .main p {
 		display: block;
 		margin-bottom: 0;
 		color: #f1f1f8;
-		font: 400 1.125rem/1rem "Open Sans", sans-serif;
+		font: 400 1.125rem/1rem "Avenir Next Cyr", sans-serif;
 	}
 
 	.help-block.with-errors .list-unstyled {
@@ -621,7 +633,7 @@ body, .main p {
 	.navbar-custom {
 		background-color: white;
 		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-		font: 700 0.75rem/2rem "Montserrat", sans-serif;
+		font: 500 0.8rem/2rem "Avenir Next Cyr", sans-serif;
 		transition: all 0.2s ease;
 	}
 
@@ -695,7 +707,7 @@ body, .main p {
 	}
 
 	.navbar-custom .dropdown-item .item-text {
-		font: 700 0.75rem/1.5rem "Montserrat", sans-serif;
+		font: 700 0.75rem/1.5rem "Avenir Next Cyr", sans-serif;
 	}
 
 	.navbar-custom .dropdown-item:hover .item-text {
@@ -749,14 +761,14 @@ body, .main p {
 	    to bottom right,
 	    rgba(82, 196, 213, 0),
 	    rgba(166, 217, 93, 0)),
-	    url('https://res.cloudinary.com/dzixj0ktk/image/upload/v1586320026/header-background_1_rtvmiq.png'
+	    url('https://res.cloudinary.com/dzixj0ktk/image/upload/v1595229064/Discount_Deck_Landing_Page-03_cl1dwt.png'
 	    ) center center no-repeat;
 		background-size: cover;
 	}
 
 	.header .header-content {
-		padding-top: 8.5rem;
-		padding-bottom: 7rem;
+		padding-top: 10rem;
+		padding-bottom: 0rem;
 		text-align: center;
 	}
 
@@ -765,7 +777,8 @@ body, .main p {
 	}
 
 	.header h1 {
-		margin-bottom: 1rem;
+		margin-bottom: .75rem;
+		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 	}
 
 	.header #js-rotating {
@@ -773,7 +786,8 @@ body, .main p {
 	}
 
 	.header .p-large {
-		margin-bottom: 2rem;
+		margin-bottom: 5rem;
+		color: #B7F2B3;
 	}
 
 	.header .btn-solid-lg {
@@ -788,16 +802,26 @@ body, .main p {
 /**********************/
 .main {
 	.footer {
-		padding-top: 5rem;
+		margin-top: -10rem;
+		padding-top: 6rem;
 		background-color: #365963;
-	}
+		transform: skewY(-3deg);
 
-	.footer .footer-col {
-		margin-bottom: 2.25rem;
+		box-shadow: 0px -4px 4px rgba(54,89,99, 0.5);
+
+		.container {
+			transform: skewY(3deg);
+		}
 	}
 
 	.footer h4 {
-		margin-bottom: 1rem;
+		margin-bottom: .25rem;
+	}
+
+	.footer p {
+		font-family: "Avenir Next Cyr";
+		font-size: 0.75rem;
+		line-height: 1.25;
 	}
 
 	.footer .list-unstyled .fas {
@@ -841,10 +865,12 @@ body, .main p {
 /*************************/
 .main {
 	.copyright {
-		padding-top: 1rem;
-		padding-bottom: 0.5rem;
+		padding-top: 3.5rem;
+		padding-bottom: 1rem;
 		background-color: #365963;
 		text-align: center;
+
+		margin-top: -2.5rem;
 	}
 
 	.copyright .p-small {
@@ -892,7 +918,7 @@ body, .main p {
 		}
 
 		h1 {
-			font: 700 3.25rem/3.75rem "Montserrat", sans-serif;
+			font: 700 3rem/3.5rem "Keep Calm Medium", sans-serif;
 		}
 		/* end of general styles */
 
@@ -959,7 +985,7 @@ body, .main p {
 
 		/* Header */
 		.header .header-content {
-			padding-top: 11rem;
+			padding-top: 12rem;
 		}
 		/* end of header */
 	}
@@ -1014,8 +1040,8 @@ body, .main p {
 
 			/* Header */
 			.header .header-content {
-				padding-top: 13rem;
-				padding-bottom: 10rem;
+				padding-top: 10rem;
+				padding-bottom: 0rem;
 				text-align: left;
 			}
 
@@ -1052,8 +1078,8 @@ body, .main p {
 
 		/* Header */
 		.header .text-container {
-			margin-top: 7.5rem;
-			margin-left: 2.5rem;
+			margin-top: 1rem;
+			margin-left: 0rem;
 		}
 
 		.header .image-container {
@@ -1061,7 +1087,7 @@ body, .main p {
 		}
 
 	  .header .image-container .img-fluid {
-	    max-width: 19.5em;
+	    max-width: 24.5em;
 	  }
 		/* end of header */
 
@@ -1106,6 +1132,10 @@ body, .main p {
 			.nav-item .nav-link, .dropdown-item {
 				color: #2373BF;
 			}
+		}
+
+		.header .p-large {
+			margin-bottom: 1rem;
 		}
 	}
 }
