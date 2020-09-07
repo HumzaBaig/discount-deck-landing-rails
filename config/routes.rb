@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   match '/privacy-policy', to: 'static#privacy_policy', via: 'get', as: :privacy_policy
   match '/cookie-policy', to: 'static#cookie_policy', via: 'get', as: :cookie_policy
 
+  match '/app-privacy-policy', to: 'static#app_privacy_policy', via: 'get', as: :app_privacy_policy
+  match '/app-terms-conditions', to: 'static#app_terms_conditions', via: 'get', as: :app_terms_conditions
+
   # blog index page
   match '/blog', to: 'static#blog', via: 'get', as: :blog
 
