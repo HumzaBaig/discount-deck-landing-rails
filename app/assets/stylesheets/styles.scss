@@ -777,7 +777,9 @@ body, .main p {
 	}
 
 	.header h1 {
-		margin-bottom: .75rem;
+		margin-bottom: 4rem;
+    letter-spacing: 1px;
+    line-height: 1.25;
 		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 	}
 
@@ -918,7 +920,7 @@ body, .main p {
 		}
 
 		h1 {
-			font: 700 3rem/3.5rem "Keep Calm Medium", sans-serif;
+			font: 700 3.5rem/4rem "Keep Calm Medium", sans-serif;
 		}
 		/* end of general styles */
 
